@@ -1,0 +1,64 @@
+% TODO: sort this out, I'm not sure what half of these even do?
+
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\renewcommand{\thesection}{\arabic{section}}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\renewcommand{\baselinestretch}{1.5} %1.25}
+\usepackage{sectsty}
+\chapternumberfont{\LARGE} 
+\chaptertitlefont{\Huge}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{gensymb}
+\usepackage{mhchem}
+\usepackage{caption}
+\usepackage[labelfont=bf]{caption}
+\usepackage{mwe}
+\usepackage{float}
+\usepackage[export]{adjustbox}
+\usepackage[obeyspaces]{url}
+\usepackage{placeins}
+\usepackage{amssymb}
+\usepackage{notoccite}
+\usepackage{chngcntr}
+\usepackage{siunitx}
+\usepackage{feynmf}
+\usepackage{hyperref}
+\usepackage[bottom]{footmisc}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%\usepackage{subfig}
+\usepackage{xcolor}
+\newcommand\myworries[1]{\textcolor{red}{#1}}
+\usepackage[caption=false]{subfig}
+\usepackage[toc,page]{appendix}
+
+
+\begin{document}
+\input{Title} 
+\tableofcontents
+\clearpage
+% \input{Outline}
+
+% I'm going to avoid labelling these as chapter numbers here. Structure still hazy.
+
+% \input{Abstract}
+% The E/p ratio
+% \input{TheEpRatio}
+% The radial magnetic field
+\input{TheRadialMagneticField}
+% \input{Method}
+% \input{Results}
+% \input{Conclusion}
+\clearpage
+\bibliographystyle{unsrt}{}
+\bibliography{bibliography}
+\clearpage
+% \input{Appendix}
+
+\end{document}

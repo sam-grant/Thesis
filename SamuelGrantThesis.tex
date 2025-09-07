@@ -1,0 +1,117 @@
+  % TODO: sort this out, I'm not sure what half of these even do?
+% \documentclass[twoside, 11pt]{report} %book}
+\documentclass[oneside, 11pt]{report} %book}
+\usepackage[utf8]{inputenc}
+\renewcommand{\thesection}{\arabic{section}}
+\usepackage[a4paper, margin=1.25in, top=1.2in, bottom=1.2in, headsep=20pt]{geometry} %, total={6in, 9in}, 
+%\usepackage[a4paper, left=1.5in, right=1.0in, top=1.2in, bottom=1.2in, headsep=20pt]{geometry} %, total={6in, 9in}, 
+\usepackage{setspace}
+\setstretch{1.5} % 1.5 text spacing
+\renewcommand{\arraystretch}{1.2} % table row spacing
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{gensymb}
+\usepackage{caption}
+\usepackage[labelfont=bf]{caption}
+\usepackage{mwe}
+\usepackage{float}
+\usepackage[export]{adjustbox}
+\usepackage[obeyspaces]{url}
+\usepackage{placeins}
+\usepackage{amssymb}
+\usepackage{notoccite}
+\usepackage{chngcntr}
+\usepackage{siunitx}
+\usepackage{feynmf}
+\usepackage[hidelinks]{hyperref} 
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{makecell}
+\usepackage[bottom]{footmisc}
+\usepackage{arydshln}
+\usepackage{xcolor}
+\usepackage[super]{nth}
+\usepackage{afterpage}
+\usepackage{mathtools}
+\usepackage{multirow} 
+\usepackage{rotating}
+\usepackage{pdflscape}
+\usepackage{array, multirow, bigdelim, makecell, booktabs} 
+\usepackage{titlesec}
+\usepackage{changepage}
+
+% Headers\ifnum\value{chapter}>0 \thechapter.\ \fi\leftmark
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%% Normal headers and footers (headers are all like RH pages for oneside)
+\ifx\@oneside\@empty%
+  \fancyhead[RO,LE]{\bfseries\thepage}%
+  \fancyhead[LO,RE]{\bfseries\nouppercase{\thechapter.\ \leftmark}}%
+\else%
+  \fancyhead[RO,R]{\bfseries\thepage}%
+  \fancyhead[LO,L]{\bfseries\nouppercase{\leftmark}}%
+\fi%
+\fancyfoot{}%
+%% Lower case header content
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+
+\renewcommand{\topfraction}{0.99}%
+\renewcommand{\bottomfraction}{0.99}%
+
+\makeatletter
+\let\ps@plain\ps@empty
+\makeatother
+
+% Start chapter titles 	
+\interfootnotelinepenalty=10000
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+\newcommand\myworries[1]{\textcolor{red}{#1}}
+\usepackage[caption=false]{subfig}
+\usepackage[toc,page]{appendix}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\titlepage}{\setcounter{page}\@ne}{}     {}{\PackageError{titlepage}{failed to patch \string\begin{titlepage} to not reset the page counter}{}}
+\patchcmd{\endtitlepage}{\setcounter{page}\@ne}{}  {}{\PackageError{titlepage}{failed to patch \string\end{titlepage} to not reset the page counter}{}}
+\makeatother
+
+\begin{document}
+
+\input{Title} 
+
+\pagenumbering{roman}
+
+\input{Declaration} 
+\input{Acknowledgements}
+\input{Abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\clearpage
+
+\pagenumbering{arabic}
+
+\input{Chapter1}
+\input{Chapter2}
+\input{Chapter3}
+\input{Chapter4}
+\input{Chapter5}
+\input{Chapter6}
+\input{Chapter7}
+
+\bibliographystyle{unsrt}{}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{bibliography}
+
+\input{Appendix}
+
+\end{document}

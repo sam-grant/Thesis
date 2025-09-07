@@ -25,7 +25,7 @@ pdflatex SamuelGrantThesis.tex
 # Or using latexmk
 latexmk -pdf SamuelGrantThesis.tex
 
-# Or use VS code, or similar, with a LaTeX plugin...
+# Or use a text editor with a LaTeX plugin (I used sublime)
 ```
 
 ---

@@ -34,8 +34,6 @@ where $\phi$ is the anomalous precession phase. The constant $G$ is the average 
 
 A demonstration of the blinding applied to simulated track decay vertices with an known injected EDM signal, as detailed in the previous chapter, is shown in Figure \ref{fig:BlindedSimFits}. Critically, this demonstrates that the blinding increases the measured EDM angle without modifying the other fit parameters. Separate blinding phrases are used for simulation and data, and all Run-1 datasets share a common phrase.
 
-% Sources of systematic uncertainty, as well statistical fluctuations, can produce results which appear intuitively sensible but are either not reproducible or a false positive.
-
 \section{Fitting the vertical angle oscillation}\label{sec:Run1Fits}
 
 In this section, blinded direct measurements of the EDM vertical angle oscillation in Run-1 are described. Both simultaneous and momentum-binned vertical angle oscillation fits, over a momentum range of 1000-2500 MeV, are presented. An example of underlying vertical angle distribution is shown, for Run-1a, in Figure \ref{fig:Run1aThetaY}, and widths of the vertical angle distributions for each Run-1 dataset are summarised in Table \ref{tbl:Run1aThetaY}.
@@ -66,11 +64,7 @@ $\sigma_{\theta_{y}}$ [mrad] & $13.565\pm0.003$ & $13.598\pm0.003$ & $13.579\pm0
 
 \subsection{Fits for the anomalous precession oscillation phase}
 
-% The fit quality, as indicated by the $\chi^{2}/\text{NDF}$, is somewhat inferior in all cases except Run-1c, which might be attributed to the use of a simple five parameter fit function: in the $\omega_{a}$ analysis proper, additional parameters are included to absorb the various oscillations beam dynamics oscillations in the data.
-
 As discussed in Chapters \ref{chap:2} and \ref{chap:5}, the first part of the EDM analysis procedure involves fitting the oscillation in the number of high-momentum tracks (the number oscillation) to determine the anomalous precession frequency phase, $\phi$. To this end, fits to the time-modulated number oscillation with the five parameter function, Equation \ref{eqn:FiveParFunc}, for each of the four Run-1 datasets are shown in Figure \ref{fig:Run1Phases}; the measured phases are reported in Table \ref{tbl:Run1Phases}. The impact of the number oscillation phase uncertainty on the EDM result is discussed in Section \ref{sec:PhaseUnc}. Additionally, and as will be expanded upon in Section \ref{sec:FitStartTimeScans}, the normal fit-start time of \SI{30.6}{\micro\second} ($7\times T_{g-2}$) was extended to \SI{52.4}{\micro\second} ($12\times T_{g-2}$) in the case of Run-1d. 
-
-
 
 \begin{figure}[h!]
 \centering{}
@@ -135,26 +129,9 @@ Run-1d  & $0.033\pm0.004$ & $0.44\pm0.06$ \\ %& $1.4\pm0.2$ \\
 
 These simultaneous fits, with tracker stations 12 and 18 combined, are shown in Figure \ref{fig:Run1BasicFits}. The results are reported in Table \ref{tbl:Run1BasicFits}, which includes a blind laboratory frame tilt angle, $\delta^{\text{BLIND}}$. This is calculated by Equation \ref{eqn:DilutionFunction2}, using the constant dilution factor of $d_{\text{EDM}}=0.075\pm0.004$ for this momentum range, from Table \ref{tbl:BasicSimFits}. It is important to note that the $\delta^{\text{BLIND}}$ values presented in this section have no radial magnetic field correction applied, and all uncertainties are statistical. The fit $\chi^{2}/\text{NDF}$ values are $<$1 with the exception of Run-1c, which is typically indicates an overestimation of the uncertainty on $\langle\theta_{y}\rangle$ per time bin. However, the uncertainties in question are purely statistical and are therefore well motivated. 
 
-
-
-% Fits and tables of results for individual stations can be found in Appendix \ref{app:Run1AdditionalTablesAndFigures}. 
-
-% As will be expanded upon in \myworries{Section XX}, various corrections were applied prior to fitting, including the removal of frequencies at a time period less than $T_{g-2}$ and the correction of average vertical angle in momentum and time. Only quality cut passing extrapolated track vertices were used. \myworries{WE NEED TO DESCRIBE WHAT THESE ARE!}
-
-
-
 \subsection{Momentum-binned vertical angle oscillation fits}
 
 As introduced in Chapter \ref{chap:5} Section \ref{sec:FittingThetaYSim}, the muon EDM search described in this thesis employs a momentum-binned approach: where fits to vertical angle oscillation are performed in momentum intervals, in an effort to improve the accuracy of the dilution correction, and to minimise momentum-dependant variations in the average vertical angle. 
-
-% \begin{figure}[b!]
-% \centering{}
-% \subfloat[Station 12.]{\includegraphics[trim={0 0 0 0},clip,width=.49\textwidth]{Images/Chapter6/S12_AEDM_vs_p_overlay_1000_2500.pdf}}
-% \subfloat[Station 18.]{\includegraphics[trim={0 0 0 0},clip,width=.49\textwidth]{Images/Chapter6/S18_AEDM_vs_p_overlay_1000_2500.pdf}}\hfill
-% \subfloat[Combined.]{\includegraphics[trim={0 0 0 0},clip,width=0.69\textwidth]{Images/Chapter6/S12S18_AEDM_vs_p_overlay_1000_2500.pdf}}
-% \caption{$A_{\text{EDM}}^{\text{BLIND}}$ per momentum bin for each Run-1 dataset. }
-% \label{fig:Run1AEDM}
-% \end{figure} 
 
 \begin{figure}[b!]
 \centering{}
@@ -175,15 +152,6 @@ Momentum-binned fits over a range of 1000-2500 MeV, in intervals of 250 MeV, are
 \caption{Fit $\chi^{2}/\text{NDF}$ per momentum bin for each Run-1 dataset, where a zeroth order polynomial fits gives the average in each case. These average values are consistent with one to within a maximum deviation of $1.5\sigma$.}
 \label{fig:Chi2Run1MomBinnedFits}
 \end{figure} 
-
-% \myworries{These distributions are not necessarily expected to be consistent between bins of the same dataset, since the blind signal is weighted according to the level of dilution in that bin, however, they are expected to be consistent for different datasets in the same bin. While this can be seen to be true for the majority of bins by simple inspection of Figure \ref{fig:Run1AEDM}, the maximum standard deviation between all combinations $A_{\text{EDM}}^{\text{BLIND}}$ values measured using different datasets, per momentum bin, is expressed by in Figure \ref{fig:Run1AEDMSigmaMax}. The greatest deviation is $\sim2.5\sigma$, which may be attributed to statistical fluctuations.}
-
-% \begin{figure}[h!]
-% \centering{}
-% \includegraphics[trim={0 0 0 0},clip,width=.49\textwidth]{Images/Chapter6/AEDM_max_sigma_vs_p_overlay_1000_2500.pdf}
-% \caption{The maximum number of standard deviations separating $A_{\text{EDM}}^{\text{BLIND}}$ values measured in different datasets, per momentum bin. \myworries{Not so sure about this plot.}}
-% \label{fig:Run1AEDMSigmaMax}
-% \end{figure} 
 
 \clearpage
 
@@ -247,8 +215,6 @@ Momentum-binned fits over a range of 1000-2500 MeV, in intervals of 250 MeV, are
 \end{figure}
 \clearpage
 
-% \clearpage  
-
 \subsection{Extracting the tilt angle}\label{sec:ExtractTiltData}
 
 The measured values of $A_{\text{EDM}}^{\text{BLIND}}$ per momentum bin are then corrected to extract the blind laboratory frame tilt angle, $\delta^{\text{BLIND}}$, per bin. This is accomplished by use of the same procedure as is demonstrated in simulation in Chapter \ref{chap:5} Section \ref{sec:ExtractTiltSim}: where the dilution correction factor is found by evaluation of Equation \ref{eqn:DilutionFunction2}, at the average momentum of each bin, which is then scaled by the appropriate $A_{\text{EDM}}$ acceptance factor to obtain the total correction per momentum bin. %Figure \ref{fig:AcceptanceFactor}.
@@ -262,17 +228,6 @@ The measured values of $A_{\text{EDM}}^{\text{BLIND}}$ per momentum bin are then
 \caption{$\delta^{\text{BLIND}}$ per momentum bin for each Run-1 dataset, with a zeroth order polynomial fit giving an uncertainty weighted average. Tracker stations 12 and 18 are combined.}
 \label{fig:DeltaFits}
 \end{figure}
-
-
-
-% the product of the value obtained from evaluation of the dilution function, Equation \ref{eqn:Dilution}, at the average momentum of each bin and acceptance scale factor for that bin, presented in Figure \ref{fig:AcceptanceFactor}, is used as the total dilution correction factor. 
-
-%where the product of the value obtained by evaluation of the dilution function, Equation \ref{eqn:DilutionFunction}, at the average momentum of that bin, and the $A_{\text{EDM}}$ acceptance scale factor, is taken as the total dilution correction factor. 
-
-% In order to extract the laboratory frame tilt angle, $\delta$, from $A_{\text{EDM}}$ at a particular momentum interval, a correction must be applied which is specific to average momentum of that interval. In the case of 100\% acceptance (all decays), the correction factor may be found by simple evaluation of the dilution function, Equation \ref{eqn:DilutionFunction}. In the case where tracker acceptance is included (truth/reco vertices), the correction factor is the product of the value obtained from the dilution function and the appropriate $A_{\text{EDM}}$ acceptance factor. 
-
-
-% value obtained from evaluation of Equation \ref{eqn:Dilution} at the mean momentum in each bin and acceptance scale factor for that bin, illustrated in Figure \ref{fig:AcceptanceFactor}, is used as the total dilution correction factor for $A_{\text{EDM}}$. 
 
 The resulting distributions of $\delta^{\text{BLIND}}$ across momentum are fitted with a zeroth order polynomial for the uncertainty weighted average, $\langle \delta^{\text{BLIND}} \rangle$, which are shown in Figure \ref{fig:DeltaFits}, with tracker stations 12 and 18 combined. The measured average blinded tilt angles, $\langle\delta^{\text{BLIND}}\rangle$, are summarised in Table \ref{tbl:Run1MomBinnedTiltAngles}, where all uncertainties are statistical.% The uncertainties associated with the acceptance correction are discussed in Section \ref{sec:AcceptanceSyst}.
 
@@ -328,7 +283,7 @@ In all cases, the majority of data points fall within the allowed deviation. How
 \end{figure} 
 
 \subsection{The time and momentum dependence of the average vertical angle}\label{subsec:AvgVertAngleData}
-% As introduced in Chapter \ref{chap:5} Section \ref{sec:AvgVertAngleSim}, the average vertical angle, $\langle \theta_{y} \rangle$, demonstrates a momentum dependence
+
 As introduced in Chapter \ref{chap:5} Section \ref{sec:AvgVertAngleSim}, the average vertical angle, $\langle \theta_{y} \rangle$, demonstrates a momentum dependence in simulation, which is attributed to tracker acceptance effects in Section \ref{sec:AcceptanceWeightings} of that chapter. This dependence is also present in Run-1 data, as illustrated in Figure \ref{fig:AvgVertAngleDataAndSim}, which also highlights the difference between the distributions of $\langle \theta_{y} \rangle(p)$ measured in Run-1 and those measured in simulation, as well as the variation between Run-1 datasets. The Run-1 datasets generally exhibit a more prominent average offset than simulation at low momentum, which is most pronounced in Run-1d. This likely indicates a contribution from damaged ESQ resistors, where the increased vertical movement of the beam, and changing vertical angle acceptance, would provide a logical explanation for the observed behaviour. At present, no adjustment to the acceptance correction is made to account for this difference, although a correction will be made before the results are unblinded.
 
 \begin{figure}[h!]
@@ -365,7 +320,6 @@ The first term relates to the slow change in the electric field due to the damag
  & Run-1a & Run-1b & Run-1c & Run-1d & Avg. \\ 
  \hline
 $\Delta \langle \delta^{\text{BLIND}} \rangle $ [mrad] & $-0.00996$ & $-0.00862$ & $-0.00679$ & $-0.0148$ & $-0.0100$ \\ 
-% $\Delta \sigma_{\delta^{\text{BLIND}}}$ [mrad] & $-1.00\times10^{-6}$ & $0.00$ & $-0.00679$ & $-0.0100$ \\ 
 \hline
 \hline
 \end{tabular}
@@ -374,13 +328,6 @@ $\Delta \langle \delta^{\text{BLIND}} \rangle $ [mrad] & $-0.00996$ & $-0.00862$
 \end{table}
 
 The impact of this correction is given in terms of the change in $\langle \delta^{\text{BLIND}} \rangle$, summarised for each dataset in Table \ref{tbl:VertOffDiff}, showing a small reduction with an average value in Run-1 of \SI{10}{\micro\radian}. No change is observed in the average fit $\chi^{2}/\text{NDF}$, and the change in the uncertainty on $\langle \delta^{\text{BLIND}} \rangle$ is $\mathcal{O}(10^{-6})$ mrad, which is negligible. 
-
-%which is a factor of $\sim10$ less than $\tau_{A}$ 
-% Since this momentum dependence is an acceptance related phenomenon, it may be argued that the observed difference between simulation and data arise from a difference between the relative position of the beam to the trackers in Run-1 compared with simulation. This might be due to the closed orbit distortion, or 
-
-%  to time dependent average vertical decay angle, which . . Station 12. }
-
-
 
 \subsection{Beam dynamics corrections}\label{subsec:BeamDynamicsCorr}
  
@@ -429,8 +376,6 @@ $\Delta \sigma_{\langle \delta^{\text{BLIND}} \rangle}$ [mrad] & $-0.00389$ & $0
 
 \subsection{Phase uncertainty assessment}\label{sec:PhaseUnc}
 
-% The analysis described in Chapter \ref{chap:6} depends on an accurate measurement of the anomalous precession oscillation phase, $\phi$, which is shown in Figure \ref{fig:Run1Phases}. 
-
 The anomalous precession oscillation phase, $\phi$ is a fixed parameter in the EDM analysis, despite possessing an uncertainty, $\sigma_{\phi}$. To evaluate the potential effect of this uncertainty on $\langle \delta^{\text{BLIND}} \rangle$, $\phi$ was fixed to a value $\pm \sigma_{\phi}$ and propagated through the analysis. The change in $\langle \delta^{\text{BLIND}} \rangle$ for both signs was found to be of the sub-\SI{}{\micro\radian} level, as shown in Table \ref{tbl:Run1PhaseUncertainty}, and is therefore negligible.
 
 \clearpage 
@@ -460,7 +405,6 @@ A further potential source of systematic uncertainty is the trackers' ability to
 %
 \begin{align*}
     \delta \langle \Delta \theta_{y} \rangle = \, \text{\SI{3}{\micro\radian}}. 
-    % \text{\SI{3}{\micro\radian}}. \\
 \end{align*}
 %
 Given that the uncertainty on the mean for both true and measured $\theta_{y}$ distributions, formed from the same simulated dataset, is one order of magnitude larger than this, the contribution from tracker resolution to the uncertainty on $A_{\text{EDM}}$, and by extension $\langle \delta^{\text{BLIND}} \rangle$, can be assumed to be negligible. As an additional point, the distribution of $\delta \langle \Delta \theta_{y} \rangle$ per 100 MeV momentum bin is shown in Figure \ref{subfig:VerticalAngleResolutionScan}: where the optimum resolution is obtained in the range 1000-2500 MeV, which is the same as is used in the analysis presented in this chapter.
@@ -501,7 +445,6 @@ The uncertainties associated with the radial magnetic field per Run-1 dataset ar
 \subsection{Table of uncertainties}
 
 \thispagestyle{empty}
-% A preliminary table of all uncertainties contributing to the main result, shown in Figure \ref{fig:MainResult}.
 
 A full summarisation of all uncertainties contributing to the final result is given in Table \ref{tbl:MainResultUnc}, where the dominant uncertainties are statistical. The uncertainties associated with tracker acceptance and alignment preliminary. %are are expected to decrease as the size of the Monte Carlo datasets used to to derive them increases, and the uncertainties associated with tracker alignment are preliminary, as discussed in Chapter \ref{chap:5} Section \ref{sec:Alignment}.
 
@@ -510,7 +453,6 @@ A full summarisation of all uncertainties contributing to the final result is gi
 \begin{tabular}{ll|cc|cc|cc|cc}
 \cline{3-10}
 \cline{3-10}
- % & \multirow{2}{*}{$\delta^{\text{BLIND}}$ [mrad]} & \multicolumn{2}{c}{$\d_{\mu}^{\text{BLIND}}$ $e\cdot$cm  \\ 
 & & \multicolumn{2}{c|}{Run-1a} & \multicolumn{2}{c|}{Run-1b} & \multicolumn{2}{c|}{Run-1c} & \multicolumn{2}{c}{Run-1d} \\ \cline{3-10}
 &  & $\delta$ [mrad] & $d_{\mu}$ [$\times10^{-19}$ $e\cdot$cm] & $\delta$ [mrad] & $d_{\mu}$ [$\times10^{-19}$ $e\cdot$cm] & $\delta$ [mrad] & $d_{\mu}$ [$\times10^{-19}$ $e\cdot$cm] & $\delta$ [mrad] & $d_{\mu}$ [$\times10^{-19}$ $e\cdot$cm] \\\cline{3-10}   
 % \\
@@ -572,48 +514,6 @@ By taking this uncertainty, and considering the scenario whereby the central val
 which constitutes an improvement on the upper limit from the equivalent traceback detector analysis at BNL, of $| d_{\mu} | <  3.2\times10^{-19} \,e\cdot\text{cm (95\% C.L.)}$ \cite{BNLEDM}, by a factor of 1.6. 
 
 When comparing the relative statistical power of the BNL traceback analysis and the Fermilab Run-1 tracker analysis, with 9.8 million and 64.1 million track decay vertices incorporated into each respectively, the preliminary upper limit reported in this thesis appears to underperform slightly. That is, based on simple $\sqrt{N}$ scaling, $N$ being the number of decay vertices, the Fermilab Run-1 upper limit might be expected to be stronger than that reported by BNL by a factor of $\sim$2.6. However, the statistical uncertainty associated with these analyses scales according to $\sigma_{\theta_{y}}/\sqrt{N}$, where $\sigma_{\theta_{y}}$ is the width of the vertical decay angle distribution. In Run-1 at Fermilab, $\sigma_{\theta_{y}}$ has been measured to be $\sim$13.6 mrad, as shown in Figure \ref{fig:Run1aThetaY} and Table \ref{tbl:Run1aThetaY}, while the exact value of $\sigma_{\theta_{y}}$ at BNL, after analysis cuts, was not reported: making a direct comparison between BNL and Fermilab difficult in this context. Studies to investigate this matter further using toy Monte Carlo are ongoing \cite{PriceUpdatedEDMLimits}.
-
-% Studies into the comparison between BNL and Fermilab Run-1 in this context are ongoing.
-
-% indicate that a width $\sim$8.6 mrad would be required to obtain their limit. 
-%tudies into the comparison between BNL and Fermilab Run-1 in this context are ongoing.
-%\c%iteindicate that a width of 8.9 mrad would 
-
-
-% was reported to be $\sim$10 mrad \cite{Sossong}, whereas it was found to be $\sim$13.6 mrad in Run-1 at Fermilab, as shown in Figure \ref{fig:Run1aThetaY} and Table \ref{tbl:Run1aThetaY}. This effectively reduces the statistical power of the Fermilab analysis by a factor of $\sim$0.735, so that the Fermilab limit might be expected to be stronger than BNL by a factor of $\sim$1.9 rather than $\sim$2.6. Furthermore, preliminary studies with toy Monte Carlo suggest that the $\sim$10 mrad width reported at BNL may be an approximation, and, moreover, that different momentum cuts may have been employed between the analysis of simulation used to derive their dilution correction compared with analysis of data, further disrupting the validity of $\sqrt{N}$ scaling in this case \cite{PriceUpdatedEDMLimits}. Studies into the comparison between BNL and Fermilab Run-1 in this context are ongoing.
-
-% Difficult to reproduce the BNL result since we do not have access to the vertical decay angle width after all analysis cuts were applied.
-
-
-
-% Gavin
-%   5:57 AM
-% if it comes down to explaining 1.6 vs 1.9, you could say something more general eg: without access to the details of the BNL analysis it is difficult to reproduce the result, but studies on toy MC show the remaining difference may be explained by the specific momentum cuts and approximations used in obtaining the limit.
-
-% pricejoe22s
-% I have just sent you my PDF. There are 2 reasons, one is that the error on the points is width/sqrt(N) and our width is bigger, so our error bars are that bit bigger
-
-% then i would just say you don’t have access to the BNL widths after all selection cuts were applied
-
-% you can estimate that they must have had a width of 8.9 (i think) in order to get their limit, which isn’t unreasonable (it isn’t true, they made a mistake, but no need to say that)
-
-% 8.9mRad i thnk, it is in that PDF
-
-% sigma1/sqrt(n) sigma2/sqrt(n)
- 
-% sigma1 = sigma1/sigma2 * sigma2 
-
-% 10/13.6
-
-% So, scaling according to 10/13.6 * (sqrt(7))? = 1.9 times better?   
-
-%  expected improvement in the limit would be $\sim$1.5  
-
-%  might be naively be expected and the comparing directly with  tracks at Fermilab in Run-1, the 
-
-
-
-% This does not scale exactly according to $1/\sqrt{N}$, which would make it about $1.0\times10^{-19}$. However, the limit really rests on the uncertainty on the vertical angle plots, which is $\sigma/\sqrt{N}$, and our $\sigma$ is much greater than BNL. This can explain the difference to some extent, although I think Sossong made some kind of error with the cuts going into his acceptance correction. Joe did a nice talk on this and showed some toy MC \cite{PriceUpdatedEDMLimits}. N Q vertices in total is $1.52\times10^{8}$. N Q vertices after cuts is $6.41\times10^{7}$. BNL has $9.8\times10^{6}$, so we have $\sim$6.5 times as many. Limit should be 2.6 times better, where it's only 1.6 times. Our limit underperforms slightly compared to naive expectation, however, our width of $\sim$13.6 mrad is compared to Sossong's 10 mrad \cite{Sossong}.}
 
 \section{Summary and outlook}
 

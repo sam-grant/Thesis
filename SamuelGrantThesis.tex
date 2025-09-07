@@ -1,47 +1,61 @@
-  % TODO: sort this out, I'm not sure what half of these even do?
-% \documentclass[twoside, 11pt]{report} %book}
-\documentclass[oneside, 11pt]{report} %book}
+% Document class and settings
+\documentclass[oneside, 11pt]{report}
 \usepackage[utf8]{inputenc}
 \renewcommand{\thesection}{\arabic{section}}
-\usepackage[a4paper, margin=1.25in, top=1.2in, bottom=1.2in, headsep=20pt]{geometry} %, total={6in, 9in}, 
-%\usepackage[a4paper, left=1.5in, right=1.0in, top=1.2in, bottom=1.2in, headsep=20pt]{geometry} %, total={6in, 9in}, 
+
+% Page layout and margins
+\usepackage[a4paper, margin=1.25in, top=1.2in, bottom=1.2in, headsep=20pt]{geometry} 
+
+% Text spacing
 \usepackage{setspace}
 \setstretch{1.5} % 1.5 text spacing
 \renewcommand{\arraystretch}{1.2} % table row spacing
+
+% Math packages
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{siunitx}
+
+% Graphics and figures
 \usepackage{graphicx}
-\usepackage{tabularx}
-\usepackage{gensymb}
-\usepackage{caption}
-\usepackage[labelfont=bf]{caption}
 \usepackage{mwe}
 \usepackage{float}
 \usepackage[export]{adjustbox}
-\usepackage[obeyspaces]{url}
 \usepackage{placeins}
-\usepackage{amssymb}
-\usepackage{notoccite}
-\usepackage{chngcntr}
-\usepackage{siunitx}
-\usepackage{feynmf}
-\usepackage[hidelinks]{hyperref} 
-\usepackage{amsmath}
-\usepackage{bm}
+\usepackage{rotating}
+\usepackage{pdflscape}
+
+% Tables
+\usepackage{tabularx}
 \usepackage{makecell}
-\usepackage[bottom]{footmisc}
 \usepackage{arydshln}
+\usepackage{array, multirow, bigdelim, makecell, booktabs} 
+\usepackage{multirow}
+
+% Captions and symbols
+\usepackage{gensymb}
+\usepackage{caption}
+\usepackage[labelfont=bf]{caption}
+\usepackage[caption=false]{subfig}
+
+% References and links
+\usepackage{notoccite}
+\usepackage[obeyspaces]{url}
+\usepackage[hidelinks]{hyperref} 
+
+% Miscellaneous formatting
+\usepackage{chngcntr}
+\usepackage{feynmf}
+\usepackage[bottom]{footmisc}
 \usepackage{xcolor}
 \usepackage[super]{nth}
 \usepackage{afterpage}
-\usepackage{mathtools}
-\usepackage{multirow} 
-\usepackage{rotating}
-\usepackage{pdflscape}
-\usepackage{array, multirow, bigdelim, makecell, booktabs} 
 \usepackage{titlesec}
 \usepackage{changepage}
 
-% Headers\ifnum\value{chapter}>0 \thechapter.\ \fi\leftmark
+% Headers and footers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 %% Normal headers and footers (headers are all like RH pages for oneside)
@@ -58,47 +72,58 @@
   \markboth{#1}{}%
 }
 
+% Float positioning
 \renewcommand{\topfraction}{0.99}%
 \renewcommand{\bottomfraction}{0.99}%
 
+% Remove page numbers from plain pages
 \makeatletter
 \let\ps@plain\ps@empty
 \makeatother
 
-% Start chapter titles 	
+% Chapter title formatting
 \interfootnotelinepenalty=10000
 \titleformat{\chapter}[display]
 {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
 
+% Custom commands
 \newcommand\myworries[1]{\textcolor{red}{#1}}
-\usepackage[caption=false]{subfig}
+
+% Appendix formatting
 \usepackage[toc,page]{appendix}
 
+% Title page patches (prevents page counter reset)
 \usepackage{etoolbox}
 \makeatletter
 \patchcmd{\titlepage}{\setcounter{page}\@ne}{}     {}{\PackageError{titlepage}{failed to patch \string\begin{titlepage} to not reset the page counter}{}}
 \patchcmd{\endtitlepage}{\setcounter{page}\@ne}{}  {}{\PackageError{titlepage}{failed to patch \string\end{titlepage} to not reset the page counter}{}}
 \makeatother
 
+% Document content starts here
 \begin{document}
 
 \input{Title} 
 
+% Roman numerals for front matter
 \pagenumbering{roman}
 
+% Preface
 \input{Declaration} 
 \input{Acknowledgements}
 \input{Abstract}
 
+% Contents, figures, tables
 \tableofcontents
 \listoffigures
 \listoftables
 
 \clearpage
 
+% Arabic numerals for main content
 \pagenumbering{arabic}
 
+% Chapters
 \input{Chapter1}
 \input{Chapter2}
 \input{Chapter3}
@@ -107,11 +132,13 @@
 \input{Chapter6}
 \input{Chapter7}
 
+% Bibliography
 \bibliographystyle{unsrt}{}
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{bibliography}
 
+% Appendix
 \input{Appendix}
 
 \end{document}

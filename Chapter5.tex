@@ -1,10 +1,6 @@
 
 \chapter[Simulation for the muon EDM search]{Simulation for the muon EDM \\search}\label{chap:5}
 
-% \myworries{What about the fact that the vertical angle has a different width to data???}
-
-% \myworries{Is it OK to refer to "reco vertices" ect in the text?}
-
 The muon EDM search described in this thesis relies on a large-scale Monte Carlo simulation to verify aspects of the theory behind the EDM search, develop the analysis strategy, and study sources of systematic uncertainty. Critically, simulation also provides a means of characterising the impact of detector acceptance on the dilution of observed angle in-phase with the EDM oscillation, $A_{\text{EDM}}$, compared with the laboratory frame tilt angle, $\delta$. Without this, an accurate measurement of a potential muon EDM signal is not possible. This work builds on previous muon EDM simulation efforts at E989 by S. Charity \cite{Charity} and G. Lukicov \cite{Lukicov}.
 
 \section{Simulation with a large injected muon EDM}\label{sec:SimulatingALargeEDM}
@@ -14,7 +10,6 @@ The analysis described in this section depends, to a great extent, on access to 
 Events were generated using the GEANT4-based in-house framework \texttt{gm2ringsim}, introduced in Chapter \ref{chap:3} Section \ref{sec:Computing}, using a mode termed the `gas gun'. In this mode, muon decay times are randomly sampled from an exponentially decaying distribution, while the energy-momentum four-vector, position, and polarisation of the individual muons are determined based on the time since injection. The simulated muons are then placed in a model of the storage ring and allowed to decay instantaneously. A muon EDM is injected by the addition of an oscillating vertical component to the muon polarisation vector \cite{Charity}. 
 
 \begin{table}[t!]
-% \begin{adjustwidth}{-1.5em}{}
 \centering
 \begin{tabular}{l|cc}
 \hline
@@ -44,33 +39,8 @@ Once generated, events were reconstructed in three distinct ways: the first, lab
 
 It should be noted that the samples of decays and track vertices were not reconstructed from entirely the same sets of events, so that one is not a subset of the other. This is because a large sample consisting only of track vertices was generated prior to the decision to retain the decays, and means that the relative number of vertices and decays in Table \ref{tbl:SimSamples} are not a reflection of detector acceptance. The true acceptance of the trackers, in terms of track vertices per decay positron, has been measured to be $\sim$3.5\% (where just $\sim$1\% form high quality track vertices). This is despite the excellent 25$\degree$ azimuthal acceptance per tracker station, which is limited by the fact that the number of positrons is highest at low momentum (below 1 GeV), as illustrated by the number distribution function in Figure \ref{fig:Asymmetry_EDM}, and the average momentum of tracks originating from further upstream are necessarily high momentum -- lower momentum positrons curl out of the storage region before reaching the detector. The low momentum positrons which do pass through the trackers do not generally form good quality tracks due to their high curvature in the magnetic field. Track quality cuts are discussed in Chapter \ref{chap:3} Section \ref{subsec:Trackers}.
 
-% tracker accepts positrons from a  region of the ring, but may be largely attributed to is primarily a consequence of a combination of trackers geometric acceptance and momentum acceptance, where only $\sim$3.5\% of decays form a track (of any sort). This is despite each tracker accepts positrons from a 25$\degree$ azimuthal region of the ring, the average momentum of tracks originating from the furthest point of that arc are necessarily high momentum, where lower momentum decays curl out of the storage region before reaching the detector. In addition, while the number of decays is highest at low momentum (below 1 GeV), as illustrated by the number distribution function in Figure \ref{fig:Asymmetry_EDM}, such decays do not usually form good quality tracks due to their high curvature in the field and a quality requirement on a minimum of twelve tracker planes hit. 
-
-% 
-% Once generated, events were reconstructed in three distinct ways: the first, labelled \textit{all decays}, utilised truth decay parameters for all positrons in the sample, with no detector effects; the second, labelled \textit{truth vertices}, used truth information associated with extrapolated track decay vertices; and the third, labelled \textit{reco vertices}\footnote{`Reco' being an abbreviation for `reconstructed', or `measured using the nominal track reconstruction algorithm'.}, used measured information associated with extrapolated track decay vertices. These three reconstructions are summarised in Table \ref{tbl:SimSamples}, along with the number of $e^{+}$ or quality-cut-passing extrapolated track vertices, introduced in Chapter \ref{chap:3} Section \ref{subsec:Trackers}, for the primary 30$\times$ BNL sample. \myworries{It should be noted that a large sample consisting only of track vertices was generated prior to the decision to retain the decays, so the samples of decays and track vertices were not reconstructed from entirely the same sets of events. This means that the relative number of vertices and decays in Table \ref{tbl:SimSamples} are not a reflection of detector acceptance. The true acceptance of the trackers, in terms of high quality track vertices per decay positron, has been measured to be $\sim$1\%. This is despite the excellent 25$\degree$ azimuthal acceptance 
-
-% tracker accepts positrons from a  region of the ring, but may be largely attributed to is primarily a consequence of a combination of trackers geometric acceptance and momentum acceptance, where only $\sim$3.5\% of decays form a track (of any sort). This is despite each tracker accepts positrons from a 25$\degree$ azimuthal region of the ring, the average momentum of tracks originating from the furthest point of that arc are necessarily high momentum, where lower momentum decays curl out of the storage region before reaching the detector. In addition, while the number of decays is highest at low momentum (below 1 GeV), as illustrated by the number distribution function in Figure \ref{fig:Asymmetry_EDM}, such decays do not usually form good quality tracks due to their high curvature in the field and a quality requirement on a minimum of twelve tracker planes hit. In total, the requirements for track quality, discussed in Chapter \ref{chap:3} Section \ref{subsec:Trackers}, reduce the effective acceptance by a further $\sim$60\%.}
-
-% Comparison between decays and vertices was critical when characterising the impact of the detector acceptance on the dilution of the measured tilt angle, expanded upon in Section \ref{sec:AcceptanceSim}. This is because the \textit{all decays} sample provides a means of performing a muon EDM analysis with 100\% acceptance, as demonstrated by the azimuthal acceptance for \textit{all decays} compared with \textit{reco vertices} shown in Figure \ref{fig:SimAzimuthalAcceptance}. 
-
-
-% in  while each tracker station accepts positrons over a $\sim25\degree$ azimuth, the correlation between distance from the tracker and momentum means that only high momementum decays are likely to reach the detector from the edge $\sim25\degree$ azimuth. Furthermore, the momentum distribution  of the  positrons are highly correlated with momentum (over a What percentage of the ring azimuth do the trackers cover? Mention the momentum acceptance. Track quality cuts as well. This is primarily a consequence.  }
-
-% \afterpage{
-% \begin{figure}[t!]
-% \centering{}
-% \subfloat[All decays.]{\includegraphics[trim={0 0 0 0},clip,width=.49\textwidth]{Images/Chapter5/ThetaY_AllDecays.pdf}} %\hfill
-% % \subfloat[Truth vertices.]{\includegraphics[trim={0 0 0 0},clip,width=.49\textwidth]{Images/Chapter5/ThetaY_TrackTruth.pdf}}
-% \subfloat[Reco vertices.]{\includegraphics[trim={0 0 0 0},clip,width=.49\textwidth]{Images/Chapter5/ThetaY_TrackReco.pdf}\label{subfig:RecoThetaY}}
-% \caption{The vertical decay angle distributions from: (a) truth parameters for all decays in the sample; (b) measured information from track decay vertices. As a consequence of tracker acceptance, the width of the track vertices distribution is reduced compared to all decays, and its mean is offset from zero. \myworries{Link to later section.}}
-% \label{fig:SimThetaY}
-% \end{figure}  
-
- 
-
 \section{Verifying the decay asymmetry function}\label{sec:DecayAsymVerification}
 
-% \myworries{What about that thing where you divide $A_{\text{EDM}}$ by the RMS?}
 A fundamental aspect of the underlying physics driving the experimental sensitivity to an EDM at E989 is the decay asymmetry function, $A(\lambda)$, given by Equation \ref{eqn:AEDM_labFrame} in Chapter \ref{chap:2} Section \ref{subsec:EDMSensitivity}. As such, it is important to verify the validity of this function. This was accomplished by use of the \textit{all decays} sample, where truth information was used to calculate the angle $\epsilon$ between the $x$-$z$ plane and the muon spin polarisation vector, as well as the angle $\theta$ between the $x$-$z$ plane and the decay positron momentum vector. If the product of these angles is positive, so that $\epsilon\cdot\theta > 0$, then the muon spin vector and positron momentum vector must be directed in the same vertical hemisphere, and so these were counted as `up' decays. If $\epsilon\cdot\theta < 0$, then the reverse is true, and such decays were counted as `down' decays. From the numbers of up/down decays, $N_{u}$ and $N_{d}$, it is possible to define the asymmetry as 
 %
 \begin{equation}
@@ -84,7 +54,6 @@ with a corresponding uncertainty of
   \delta A = \sqrt{\frac{1-A^{2}}{N_{u}+N_{d}}},
   \label{eqn:UpDownAsymError}
 \end{equation}
-%float eA = sqrt((1-pow(A,2))/(N_1+N_2));
 %
 a full derivation for which is given in Appendix \ref{app:Unc} Section \ref{app:A}. The distributions $A(\lambda)$ and the statistical figure-of-merit (FOM) $NA^{2}(\lambda)$, derived from simulation, are shown in Figure \ref{subfig:SimEDMAsymDists}. The analytical form of $A(\lambda)$ is overlaid on the corresponding distribution from simulation in Figure \ref{subfig:SimEDMAsymFit}, showing excellent agreement. 
 
@@ -101,10 +70,6 @@ a full derivation for which is given in Appendix \ref{app:Unc} Section \ref{app:
 As introduced in Chapter \ref{chap:2} Section \ref{subsec:VerticalAngleBasedSearch}, the measured signal in this analysis is the vertical angle in-phase with the EDM oscillation, $A_{\text{EDM}}$. This quantity may be accessed by fitting for an oscillation in the average vertical angle as a function of time, $\langle \theta_{y} \rangle(t)$, which is phase shifted by $\pi/2$ from the anomalous precession oscillation (the number oscillation, introduced in Chapter \ref{chap:2} Section \ref{subsec:SensitivityToOmegaA}). Therefore, the first step in the analysis is to fit the number oscillation for the anomalous precession oscillation phase, $\phi$, using the five parameter function given by Equation \ref{eqn:FiveParFunc}. $\langle \theta_{y} \rangle(t)$ may then be fitted with Equation \ref{eqn:VertAngleFitFunc} for $A_{\text{EDM}}$, with $\phi$ as a fixed parameter. $\omega_{a}$ is fixed to a value of 1.439311 rad$/$\SI{}{\micro\second} throughout, which is the average measured value for the positive muon at the BNL $g-2$ experiment \cite{BNLFinalReport}.
 
 Furthermore, the muon EDM search presented in this thesis employs momentum-binned approach, which is motivated, in part, by the momentum dependence of $A_{\text{EDM}}$ -- or, the momentum dependence of the total dilution of $\delta$ -- described by Equation \ref{eqn:DilutionFunction2}. Additionally, and as will be discussed in both Section \ref{sec:AvgVertAngleSim} and Chapter \ref{chap:6} Section \ref{subsec:AvgVertAngleData}, the average vertical angle itself possesses a momentum dependence (due to acceptance effects), further motivating a momentum-binned analysis. Fits to the vertical angle oscillation without the use of this technique, where momentum intervals are fitted simultaneously, are referred to in this thesis as `simultaneous fits'. These are performed as a cross-check of the main results. 
-
-% This approach is designed to increase sensitivity,  in order to 
-
-% The aforementioned dependence of the average vertical angle on momentum, along with the fact that $A_{\text{EDM}}$ is itself momentum dependent by Equation \ref{eqn:DilutionFunction} -- or, more specifically, the level to which $\delta$ is diluted, $d_{\text{EDM}}$, is momentum dependent -- motivates an analysis which is conducted in momentum intervals. This approach reduces the variation of the average vertical angle in each fit. Distributions of $A_{\text{EDM}}$ for fits per 250 MeV are shown in Figure \ref{fig:AEDM_overlay_sim}. The impact of tracker acceptance is clear, manifesting as a significant decrease in sensitivity which is most pronounced at low momentum. 
 
 \subsection{Modulation at the anomalous precession period}\label{sec:TimeMod}
 
@@ -232,11 +197,6 @@ The aforementioned dilution function, Equation \ref{eqn:DilutionFunction2}, desc
 
 By comparison of fit results from \textit{all decays} to those from track vertices, presented in the previous section, it may be deduced that tracker acceptance plays a critical role in the observed dilution of the tilt angle. In this section, the impact of tracker vertical angle acceptance on the measured $A_{\text{EDM}}$ as a function of momentum will be characterised.
 
-
-% , in part by use an additional, pre-existing, sample of Monte Carlo with no injected EDM. In this `No EDM' sample, the true extrapolated track vertices are a subset of the truth decay parameters. This is essential when counting the fraction of accepted decays, and is not the case for the simulation datasets detailed in the earlier sections of this chapter.
-
-% by use a separate, pre-existing, sample of Monte Carlo with no injected EDM. In this sample, the true extrapolated track vertices, `truth vertices', are a subset of the truth decay parameters, again labelled `all decays'. This is essential when counting the fraction of accepted decays, and is not the case for the simulation datasets detailed in the earlier sections of this chapter.
-
 \subsection{Vertical angle acceptance}
 
 \begin{figure}[b!]
@@ -267,27 +227,6 @@ By comparison of fit results from \textit{all decays} to those from track vertic
 \end{figure} 
 
 The vertical angle acceptance of the straw trackers is three-dimensional, with varying acceptance of $\theta_{y}$ in the radial, azimuthal, and vertical axes. Distributions of $\theta_{y}$ in each of these three dimensions are given in Figure \ref{fig:AcceptanceCorrelations}, showing both two-dimensional histograms and their corresponding one-dimensional $x$-axis profiles. Little correlation is observed between $\theta_{y}$ and the radial decay position or azimuthal decay angle, while there is a clear negative correlation between $\theta_{y}$ and the vertical decay position, $y$, as shown by Figure \ref{subfig:ProfileY}. For this reason, it was decided that only the vertical component of $\theta_{y}$ acceptance need be considered for the study presented in this section.
-
-
-
-
-
-% \begin{figure}[t!]
-% \centering{}
-% \subfloat[]{\includegraphics[trim={0 0 0 0},clip,width=.33\textwidth]{Images/Chapter5/S12S18_VerticalDecayAngleRatio_-45_-35.pdf}}
-% \subfloat[]{\includegraphics[trim={0 0 0 0},clip,width=.33\textwidth]{Images/Chapter5/S12S18_VerticalDecayAngleRatio_-35_-25.pdf}}
-% \subfloat[]{\includegraphics[trim={0 0 0 0},clip,width=.33\textwidth]{Images/Chapter5/S12S18_VerticalDecayAngleRatio_-25_-15.pdf}}
-% \hfill
-% \subfloat[]{\includegraphics[trim={0 0 0 0},clip,width=.33\textwidth]{Images/Chapter5/S12S18_VerticalDecayAngleRatio_-15_-5.pdf}}
-% \subfloat[]{\includegraphics[trim={0 0 0 0},clip,width=.33\textwidth]{Images/Chapter5/S12S18_VerticalDecayAngleRatio_-5_5.pdf}}
-% \subfloat[]{\includegraphics[trim={0 0 0 0},clip,width=.33\textwidth]{Images/Chapter5/S12S18_VerticalDecayAngleRatio_5_15.pdf}}
-% \hfill
-% \subfloat[]{\includegraphics[trim={0 0 0 0},clip,width=.33\textwidth]{Images/Chapter5/S12S18_VerticalDecayAngleRatio_15_25.pdf}}
-% \subfloat[]{\includegraphics[trim={0 0 0 0},clip,width=.33\textwidth]{Images/Chapter5/S12S18_VerticalDecayAngleRatio_25_35.pdf}}
-% \subfloat[]{\includegraphics[trim={0 0 0 0},clip,width=.33\textwidth]{Images/Chapter5/S12S18_VerticalDecayAngleRatio_35_45.pdf}}
-% \caption{$\theta_{y}$ acceptance ratios in $y$ intervals of \SI{10}{\milli\metre}, indicated by secondary two-dimensional histograms. Positrons originating from the bottom of the storage region must carry a positive vertical component of momentum to be accepted by the straw trackers, and vice versa, resulting in negative correlation between $\theta_{y}$ and $y$. Histograms are formed from a Monte Carlo sample where vertices are a subset of decays, the one-dimensional distributions are normalised to their maximum ratio, and tracker stations are combined.} 
-% \label{fig:1DAcceptanceRatios}
-% \end{figure} 
 
 The physical origin for the correlation between the accepted $\theta_{y}$ and $y$ is as follows: a positron originating from the bottom of the storage region, vertically lower than the mid-plane of the straw trackers, must possess a positive vertical component of momentum if it is to travel upwards and be accepted by the detector. The reverse is true for positrons originating at the top of the storage region. This effect is demonstrated by Figure \ref{fig:1DAcceptanceRatios}, where one-dimensional distributions of $\theta_{y}$ for \textit{truth vertices} and \textit{all decays} are overlaid in \SI{15}{\milli\metre} intervals of $y$. The physical (\textit{all decays}) distributions of $\theta_{y}$ remains symmetrical, whereas the accepted (\textit{truth vertices}) distribution is positive for a negative interval of $y$, and vice versa. 
 
@@ -387,10 +326,6 @@ The change in the $A_{\text{EDM}}$ acceptance factor per mm is then approximated
 The procedure described in this section makes the approximation that the uncertainties associated with $A_{\text{EDM}}$ are 100\% correlated between the nominal and shifted samples, that is, the sets of tracks in both samples are derived from the same set of positrons. This is an inaccuracy, although the exact level of correlation is not known at present, and so the possibility that the variation seen in Figures \ref{fig:AEDMWithAlignment} and \ref{fig:AEDMAlignmentUnc} is due to statistical fluctuations cannot be excluded. Because of this, and the fact that the contributions from the global tracker vertical angle is not yet included, the global alignment uncertainty described here must be considered preliminary. 
 
 \section{Summary and outlook}
-
-% In summary, a large-scale sample of Monte Carlo with a injected muon EDM signal of $5.4\times10^{-18}$ $e\cdot$cm (30$\times$ the BNL upper limit \cite{BNLEDM}), was generated. 
-
-% Chapter \ref{chap:5} describes the large-scale simulation efforts which are essential to the development and proving characterisation of sources of systematic uncertainty in the measurement, and, critically, the contribution from detector acceptance to the observed momentum dependent dilution of the EDM signal.
 
 The large-scale Monte Carlo simulation efforts outlined in this chapter have been shown to be vital to the development and verification of the tracker-based muon EDM analysis technique. The analysis procedure was demonstrated by use of a primary sample with an injected EDM of $5.4\times10^{-18}$ $e\cdot$cm (30$\times$ the BNL upper limit \cite{BNLEDM}), and a secondary sample with an injected EDM of $1.8\times10^{-18}$ (10$\times$ BNL). The momentum-binned approach to fitting the vertical angle oscillation was introduced and motivated, based on the variation of $\langle \theta_{y} \rangle$, and the dilution of $\delta$, with momentum. The decay asymmetry and dilution functions, Equations \ref{eqn:AEDM_labFrame} and \ref{eqn:DilutionFunction2}, were verified, and the impact of tracker acceptance on the dilution of observed angle $A_{\text{EDM}}$ was characterised. Critically, this enables $\delta$ to be extracted from the measured $A_{\text{EDM}}$, producing results consistent with expectation, as shown. Finally, procedures were developed for estimating the contributions to the uncertainty on $\delta$ from the acceptance correction, including the contribution from the Monte Carlo statistical uncertainty, and, preliminarily, the contribution from global vertical alignment. 
 

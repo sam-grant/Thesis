@@ -55,9 +55,6 @@ A muon placed in an external magnetic field, $\vec{B}$, will experience a torque
 %
 From this expression, it can be deduced that $g_{\mu}$ may be measured by injecting non-relativistic muons into a magnetic field and performing a simultaneous measurements of $\omega_{s}$ and $B$, where $\omega_{s}$ is determined by making use of the correlation between decay $e^{\pm}$ energy and spin orientation from the parity violation arguments outlined in the previous section. 
 
-%This was basic principle used to indirectly measure $a_{\mu}$, prior to the CERN Muon $g-2$ experiments.
-
-% \myworries{However, matters are complicated by the fact that the direction of the spin vector, and its rate of precession, are not directly observable. For the muon, which is both created and destroyed via the weak nuclear force, the rate of spin precession may instead be inferred from an understanding of parity, $P$, violation in weak decays.} 
 \subsection{The anomalous precession frequency, $\omega_{a}$}
 
 A muon moving through a homogeneous magnetic field will not only undergo Larmor precession, at an angular frequency $\omega_{s}$, but will also be subject to the Lorentz force; causing it to travel in a circle of constant radius. This is cyclotron motion, where the angular cyclotron frequency, $\omega_{c}$, is defined by 
@@ -86,28 +83,6 @@ A illustration of a population of spin polarised muons undergoing both Larmor pr
 \subsection{Measuring $\omega_{a}$}
 
 The anomaly frequency is measured by making use of the parity violation arguments outlined in Section \ref{sec:ParityViolation}, which give a correlation between $e^{+}$ emission angle and $\mu^{+}$ spin vector which depends on the $e^{+}$ energy. Because of this, the population of high energy $e^{+}$ will vary as a function of time with a frequency equal to $\omega_{a}$, where the maxima of the oscillation will occur when the muon spin and momentum vectors are aligned, and the minima when they are antialigned. The choice of low energy threshold used to define `high energy $e^{+}$' is discussed in Section \ref{subsec:SensitivityToOmegaA}. The anomalous precession oscillation may be fitted with a sinusoidal function in order to extract the frequency, which is illustrated by use of a toy model in Figure \ref{fig:ToyWiggle}. 
-
-%illustrating the $\omega_{a}$ oscillation resulting from an exponentially decaying population of muons, is shown 
-
-% \clearpage
-
-% Parity violation arguments (outlined in Section \ref{sec:ParityViolation}) give a correlation between $e^{+}$ emission angle and $\mu^{+}$ spin vector, so, provided that the muon beam is spin polarised on injection into the magnetic field, the population of high energy decay positrons will vary as a function of time with a frequency equal to $\omega_{a}$. 
-%
-
-
-% \begin{figure}[t!]
-% \centering{}
-% \includegraphics[trim={2cm 2cm 2cm 2cm},clip,width=\textwidth]{Images/Method/AnomalyFrequencyCartoon.pdf}
-% \caption{A cartoon showing the relative precession of the spin and momentum vectors of a muon traversing a constant magnetic field, where the magnetic field lines are directed out of the page and the muons are injected at 12 o'clock. If $g_{\mu}=2$, then the two vectors will remain in phase; if $g_{\mu}\neq2$ then they will move out of phase. The rate of precession of the spin vector relative to the momentum vector is the anomaly frequency, $\vec{\omega}_{a}$, enabling a direct measurement of $a_{\mu}$.} 
-% \label{fig:AnomalyFreq}
-% \end{figure}
-
-% \begin{figure}[t!]
-% \centering{}
-% \includegraphics[trim={0cm 0cm 0cm 0cm},clip,width=.69\textwidth]{Images/Method/ToyWiggle.pdf}
-% \caption{A toy example of a population of high energy $e^{+}$ varying at the anomaly frequency, $\omega_{a}$.}
-% \label{fig:ToyWiggle}
-% \end{figure}
 
 \begin{figure}[t!]
 \centering{}
@@ -142,20 +117,6 @@ resulting in a modified expression for $\omega_{a}$:
 The relativistic parts of the above equation cancel, returning a simplified expression equal to the non-relativistic Equation \ref{eqn:omega_a}. 
 
 As a further complication, the E989 storage ring employs electrostatic quadrupoles (ESQs) to provide vertical focusing to the beam -- discussed in detail in Chapter \ref{chap:3} Section \ref{sec:ESQs}. The presence of an external electric field, $\vec{E}$, modifies both $\omega_{s}$ and $\omega_{c}$ again, so that $\omega_{a}$ is described by
-%
-% \begin{equation}
-%   \vec{\omega}_{c}=\frac{Qe}{m_{\mu}}\left[\frac{1}{\gamma}\vec{B}-\frac{\gamma}{\gamma^{2}-1}(\beta\times\vec{E})\right]
-%   \label{eqn:FullCyclotron}
-% \end{equation}
-% %
-% and 
-% %
-% \begin{equation}
-%   \vec{\omega}_{s}=\frac{Qe}{m_{\mu}} \left[ \left(\frac{g_{\mu}}{2}-1+\frac{1}{\gamma}\right)\vec{B}-\left(\frac{g_{\mu}}{2}-1\right)\left(\frac{\gamma}{\gamma+1}\right)(\vec{\beta}\cdot\vec{B})\,\vec{\beta}-\left(\frac{g_{\mu}}{2}-\frac{\gamma}{1-\gamma}\right) (\vec{\beta} \times \vec{E}) \right], %(\vec{\beta}\times\vec{E}) 
-%   \label{eqn:BMT}
-% \end{equation}
-% %
-% where the modified expression for $\vec{\omega_{s}}$ is the Bargmann-Michel-Telegdi (BMT) equation \cite{BMT}. The resulting expression for $\vec{\omega}_{a}$, taking the difference between $\vec{\omega}_{c}$ and $\vec{\omega}_{s}$, is
 %
 \begin{equation}
   \vec{\omega}_{a}=\frac{Qe}{m_{\mu}} \left[ a_{\mu}\vec{B}-a_{\mu}\left(\frac{\gamma}{\gamma+1}\right)(\vec{\beta}\cdot\vec{B})\;\vec{\beta}-\left(a_{\mu}-\frac{\gamma}{1-\gamma^{2}}\right) (\vec{\beta} \times \vec{E}) \right]. %(\vec{\beta}\times\vec{E}) 
@@ -287,16 +248,7 @@ allowing $a_{\mu}$ to be written in terms of the two frequencies measured in the
 %
 As of 2018, $g_{e}$, $m_{\mu}/m_{e}$, and $\mu_{p}/\mu_{e}$ are known to within 0.00017 ppb, 22 ppb, and 0.3 ppb respectively \cite{CODATA_2018}. These uncertainties, with a quadrature sum of 22 ppb (compared with E989's target precision of 140 ppb), do not present any limitation to the precision on the final determination of $a_{\mu}$ at Fermilab. 
 
-% \myworries{People often like to write this out in a different way, such as below. I'm not sure what this adds, to me it seems to like an over-complication. Presumably there is a reason.} 
-
-% \myworries{
-% \begin{equation}
-%   a_{\mu} = \frac{\omega_{a}/\omega_{p}}{\mu_{\mu}/\mu_{p}-\omega_{a}/\omega_{p}}=\frac{\mathcal{R}}{\lambda-\mathcal{R}}
-% \end{equation}
-% }
-
 \section{Searching for a muon EDM}
-% \section{Muon electric dipole moment search techique} %Searching for a muon electric dipole moment}
 
 \subsection{The spin precession plane tilt angle}
 
@@ -407,19 +359,11 @@ As noted previously, the maxima and minima of the $\omega_{a}$ oscillation occur
 %
 where amplitudes $A_{g-2}$ and $A_{\text{EDM}}$ represent the observed angle in-phase with the $\omega_{a}$ ($g-2$) oscillation and the $\omega_{\eta}$ (EDM) oscillations respectively, and $\phi$ is the constant phase of the $\omega_{a}$ oscillation. It is assumed that $\omega_{a}>>\omega_{\eta}$, so the angular frequency of the oscillation is taken as $\omega_{a}$. The measured angle $A_{\text{EDM}}$ must then be corrected to obtain $\delta$, as will be expanded upon in the following section. The fit function, Equation \ref{eqn:VertAngleFitFunc}, is illustrated in Figure \ref{fig:OrthogonalTermsIllustration}.
 
-
-
-% %
-
 \subsection{Sensitivity to a muon EDM}\label{subsec:EDMSensitivity}
 
 The EDM search applies the same process of optimising the decay asymmetry and statistical sensitivity as the $\omega_{a}$ measurement, described in Section \ref{subsec:SensitivityToOmegaA}. The decay asymmetry function in this case relates to vertical (up/down) decays with a tilted spin precession plane, rather than the asymmetry for decays in the $x$-$z$ plane. A major point of difference here is that when the laboratory frame muon spin and momentum vectors are maximally aligned or anti-aligned, the boosted tilt angle is instantaneously zero. This means that there is no sensitivity to an EDM at maximum and minimum positron energy, which is reflected in the asymmetry function going to zero, as will be shown.
 
 The time dependent probability of positron emission with a titled spin precession plane is given is given by
-%
-% \begin{equation}
-%   P(\lambda, \theta, \phi, t) d\lambda d\Omega, \propto N(\lambda) (1+A(\lambda)\cos(\alpha(\theta, \phi, t)))
-% \end{equation}
 %
 \begin{equation}
   P(\lambda^{*}, \theta^{*}, \phi^{*}, t) \propto N(\lambda^{*}) \Big( 1+A(\lambda^{*})\cos\alpha(\theta^{*}, \phi^{*}, t)\Big), 
@@ -448,31 +392,19 @@ where $N(\lambda)$ is given by Equation \ref{eqn:N_labFrame}. A full derivation 
 \label{fig:Asymmetry_EDM}
 \end{figure}
 
-% \subsection{Sensitivity to a muon EDM Variation of the EDM vertical angle from relativistic effects}
-
 With a tilted precession plane, it might be expected that the size of average observed vertical angle in-phase with $\omega_{\eta}$, $A_{\text{EDM}}$ from Equation \ref{eqn:VertAngleFitFunc}, would follow the same dependence on energy as the asymmetry function described above. However, the Lorentz transformation into the laboratory frame results in a momentum dependent variation of the width of the vertical angle distribution, so that the average observed vertical angle is decreases with energy. A description of the variation of the maximum vertical angle with momentum, based on kinematic arguments, is given in Appendix \ref{app:MaxVertAngle}. In order to properly describe the variation of the angle associated with an EDM, both the asymmetry and the Lorentz transformation of the vertical angle must be accounted for. Following the derivation outlined by J. Price in \cite{JoeEDMNote}, the expression for the laboratory frame average vertical angle for decays occurring at the point of maximum tilt is given by 
-%
-% \begin{equation}
-%   A_{\text{EDM}}(\lambda) \propto \frac{(\lambda-1)(2\lambda+1)}{4\lambda^{2}-5\lambda-5}\cdot \sin\delta^{*}.
-%   \label{eqn:DilutionFunction}
-% \end{equation} %\label{eqn:PriceFunction}
 %
 \begin{equation}
   \langle {\theta_{y}^{\text{EDM}}} \rangle (\lambda) \propto \frac{(\lambda-1)(2\lambda+1)}{4\lambda^{2}-5\lambda-5} \frac{\sin{\delta^{*}}}{\gamma},
-  %\label{eqn:PriceFunction}
   \label{eqn:DilutionFunction1}
 \end{equation} 
 %
 where $\sin{\delta^{*}}/\gamma \approx \delta$ by the small angle approximation. If all decays could be perfectly observed, and if $\delta^{*}$ were known, the above expression would describe the observed variation in the average vertical angle from an EDM exactly. The level of reduction of $\langle {\theta_{y}^{\text{EDM}}} \rangle $ compared to $\delta$ is termed `dilution', $d_{\text{EDM}}$, which may be expressed as a function of $\lambda$ by 
 %
-% \begin{equation}
-%   d_{\text{EDM}}(\lambda) = \frac{1}{\delta}\cdot A_{\text{EDM}}(\lambda),
-%   \label{eqn:Dilution}
-% \end{equation} %\label{eqn:PriceFunction}
 \begin{equation}
   d_{\text{EDM}}(\lambda) = \frac{1}{\delta} \cdot \langle {\theta_{y}^{\text{EDM}}} \rangle(\lambda),
   \label{eqn:DilutionFunction2}
-\end{equation} %\label{eqn:PriceFunction}
+\end{equation} 
 %
 and is generally referred to as the `dilution function' in this thesis. Efforts to characterise the dilution of $\delta$, with the inclusion of detector acceptance, is discussed in detail in Chapter \ref{chap:5}. An illustration of the dilution function, Equation \ref{eqn:DilutionFunction2}, is shown in Figure \ref{fig:DilutionFunc}.
 

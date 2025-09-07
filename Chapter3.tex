@@ -34,11 +34,6 @@ A large part of the motivation for conducting E989 at Fermilab was the availabil
 
 Once delivered to the target hall, the protons are directed at an Inconel target, a high-Z nickel-iron alloy, where the ensuing proton-nucleon interactions results in the production of large quantities of pions. The pions are focused by a lithium lens downstream of the production target, and a bending magnet is used to select positive pions with a momentum within $\pm10$\% of 3.11 GeV. The beam is then sent to the `delivery ring', where the pions that have not already decayed into muons are given time to do so by the process given in Equation \ref{eqn:PionDecay}. Within the delivery ring, muons with highest momentum are selected, ensuring that the muon beam is highly spin polarised in the manner shown in Figure \ref{fig:PionDecay}. The delivery ring also serves the purpose of removing residual protons and deuterons by use of an electromagnetic kicker. Finally, the muons are sent to the E989 experiment hall, where they pass through four electromagnetic focusing quadrupoles before being injected into the storage ring as a highly polarised beam with a momentum spread of $\pm1.6$\% \cite{BeamDynamics} about the magic momentum, 3.094 GeV. Further discussion on the accelerator complex and muon delivery to E989 may be found in \cite{FermilabBeamline}.
 
-
-% of highly polarised positive muons at ±2\% of the magic momentum, 3.094 GeV, are sent to the E989 experiment hall, where they pass through four electromagnetic focusing quadrupoles before being injected into the storage ring. Further discussion on the accelerator complex and muon delivery to E989 may be found in \cite{FermilabBeamline}. 
-
-% Finally, a beam of highly polarised positive muons at the magic momentum, 3.094 GeV, are sent to the E989 experiment hall, where they pass through four electromagnetic focusing quadrupoles before being injected into the storage ring. 
-
 \section{Injection and storage}\label{sec:InjectionAndStorage}
 
 \subsection{The inflector}
@@ -53,13 +48,10 @@ Once delivered to the target hall, the protons are directed at an Inconel target
 \label{fig:Inflector}
 \end{figure} 
 
-% Inflector
-%As well be expanded upon later in this chapter, the `yoke'\footnote{\myworries{Check this}} of E989 main magnet is a monolithic iron  
 The E989 main magnet is designed to produce a homogenous magnetic field around the full azimuth of the ring, necessitating a monolithic construction with as few gaps as possible. Because of this, the muons must be injected directly through the magnet yoke (discussed in Section \ref{sec:Field}). In order to achieve this without the beam being deflected, the muons are passed through a specialised field cancelling device called the `superconducting inflector magnet', or `inflector', which is oriented at an approximate tangent to the storage ring. The inflector consists of superconducting niobium-titanium-copper-aluminium coils, wrapped to give the unique geometry of electric currents required to almost completely cancel the main magnetic field, shown in Figure \ref{fig:Inflector}. The positioning of the inflector relative to storage ring as whole is shown in Figure \ref{fig:RingSchematic}. The time at which the beam passes through the inflector marks the beginning of period known as a `fill'\footnote{The initial time of the fill, $t=0$, is defined by a detector called the `T0 counter' described in Section \ref{subsec:Aux}.}. Further information on the inflector can be found in \cite{InflectorCommissioning}.
 
 \subsection{The kickers}
 
-% Kicker
 The interior volume of the ring through which the muons circulate, the `storage region', must be free from obstruction. Because of this, the inflector is displaced from the central radius of the storage region, $R_{0}=7112$ mm, by \SI{77}{\milli\metre}. Without intervention, the muons would propagate once around the ring and collide with the inflector. In order to set the beam on a stable orbit, a large radial force must be applied to the beam, a `kick'. To achieve this, three electromagnetic kickers positioned at 90{\degree} from the inflector, denoted by K1 through K3 in Figure \ref{fig:RingSchematic}, provide a pulsed magnetic field sufficient to compensate for the initial displacement, centring the beam on $R_{0}$. Each kicker consists of two 1.27 m long aluminium plates, which is non-ferric so as not to perturb the magnetic field, positioned inside the storage ring vacuum. They are designed to produce an integrated vertical magnetic field of approximately 1.1 kG-m for a period of 120 ns, covering the full time width of the injected bunch, which dies away before the muons re-enter the kicker aperture following a cyclotron period of \SI{149.2}{\nano\second}. 
 
 The intensity of the kicker pulse with time is given by the black curve in Figure \ref{subfig:KickerPulse}, showing how the peak is contained within the cyclotron period, indicated by dashed blue lines. A photograph of a spare set of kicker plates is shown by Figure \ref{subfig:KickerPulse}. Detailed discussion on the kicker system can be found in \cite{KickerPaper}.
@@ -67,7 +59,6 @@ The intensity of the kicker pulse with time is given by the black curve in Figur
 \begin{figure}[t!]
 \centering{}
 
-% trim={0 0 0 0},clip,width=.69\textwidth
 \subfloat[The kicker pulse.]{\includegraphics[trim={0 0 0 0},clip,width=.49\textwidth]{Images/Chapter3/KickerPulse_Wide2.pdf}\label{subfig:KickerPulse}}
 \subfloat[Spare kicker plates.]{\includegraphics[trim={0 0 0 0},clip,width=.49\textwidth]{Images/Chapter3/SpareKickerPlates.pdf}\label{subfig:KickerPlates}}
 \caption{(a) The intensity of the kicker pulse with time, shown by a black curve, where the \SI{120}{\nano\second} peak is contained within the \SI{149.2}{\nano\second} cyclotron period, indicated by dashed blue lines; (b) a photograph of a spare set of kicker plates. First image reproduced from \cite{BeamDynamics}, second image courtesy of A. P. Schreckenberger \cite{KickerPlates}.}
@@ -77,7 +68,6 @@ The intensity of the kicker pulse with time is given by the black curve in Figur
 
 \subsection{The electrostatic quadrupoles}\label{sec:ESQs}
 
-% Since the momentum vectors of the individual muons are not perfectly aligned with tangent of the ideal storage radius, and have some vertical component, 
 
 \begin{figure}[t!]
 \centering{}
@@ -90,7 +80,7 @@ The intensity of the kicker pulse with time is given by the black curve in Figur
 In the ideal case, the kick would set the muons on a perfect orbit, whereby every muon is aligned with the tangent of circle defined by the ideal storage radius, and has an exclusively longitudinal component of momentum which is exactly equal to the magic momentum, $3.094$ GeV. In reality, the storage ring possesses a momentum acceptance of $\pm0.15$\% about this value \cite{BeamDynamics}, as previously noted in Chapter \ref{chap:2} Section \ref{sec:OmegaACorrections}, with momentum components in the radial and vertical directions. Because of this, the beam must be focused in order to prevent beam divergence and complete loss of storage after a few revolutions. The main dipole magnetic field focuses the beam radially\footnote{The ESQs have a defocusing effect along the radial axis, but combination of electric and magnetic fields is still adequate to provide net focusing.}, while vertical focusing is provided by four in-vacuum electrostatic quadrupoles (ESQs). The ESQs are spaced evenly around the ring, denoted by Q1 through Q4 in Figure \ref{fig:RingSchematic}, where they cover 43\% of the total azimuth --  leaving space for other in-vacuum storage ring components such as the inflector, kickers, and straw tracking detectors. A critical ESQ parameter is the field index, $n$, which relates the electric field gradient $\kappa = \partial E_{y} / \partial y$, to the strength of main magnetic dipole field, $B_{0}$, given by
 %
 \begin{equation}
-  n = \frac{\kappa R_{0}}{v B_{0}} %\frac{R_{0}}{vB_{0}}\frac{\partial E}{\partial y} % = \frac{\kappa R_{0}}{v B_{0}} % \approx \frac{\kappa R_{0}}{c B_{0}},
+  n = \frac{\kappa R_{0}}{v B_{0}} 
   \label{eqn:FieldIndex}
 \end{equation}
 %{}
@@ -98,12 +88,6 @@ where $R_{0}$ is the central radius of the storage region and $v$ is the muon ve
 
 The ESQs also serve the important function of removing improperly stored muons, which are destined to exit the ring before decaying: contaminating the flux of decay positrons falling into the detectors. This process is known as `scraping', which begins at injection and lasts for \SI{7}{\micro\second}, after which the ESQs are ramped to their full set-point voltage \cite{BeamDynamics}. The scraping procedure involves charging the ESQ plates with asymmetric voltages to move the beam radially and vertically into five 45 mm radius copper collimators, which scatter muons on the tails of the beam distribution, causing them to lose energy and fall out of the storage region. After a total time of \SI{30}{\micro\second} after injection, the beam stabilises and the remaining muons are properly stored. Further information on the ESQs can be found in \cite{TDR}.
 
-% \begin{figure}[t!]
-% \centering{}
-% \includegraphics[trim={0 0 0 0},clip,width=.69\textwidth]{example-image}
-% \caption{A photograph the kicker plates mounted in the storage ring vacuum chamber.}
-% \label{fig:Quads}
-% \end{figure}
 \section{Muon beam dynamics}\label{sec:BeamDynamics}
 
 This section will describe the muon beam dynamics which are relevant to the work presented in this thesis. A more comphrensive review of beam dynamics at E989, as it applies to Run-1, may be found in \cite{BeamDynamics}.
@@ -136,11 +120,6 @@ where $\omega_{c}$ is the angular cyclotron frequency given by Equation \ref{eqn
 \end{equation}
 %
 giving the betatron frequencies of  
-
-% \begin{equation}
-%   f_{\text{CBO}} = f_{c} - f_{x_{\text{BO}}}
-%   \label{eqn:CyclotronFrequency}
-% \end{equation}
 
 \begin{equation}
   f_{x} = f_{c}\cdot\sqrt{1-n},
@@ -284,8 +263,6 @@ The auxiliary detectors are distinct from the calorimeters and straw tracking de
 
 Three systems fall into this category, the first being the `T0' counter: a scintillating paddle connected to two photomultiplier tubes (PMTs), positioned outside the ring and upstream of the inflector. The primary function of the T0 is to define the initial time of the fill, $t=0$, which is essential for the synchronisation the various systems in the ring \cite{T0}. The second auxiliary detector is the `inflector beam monitoring system' (IBMS): grids of scintillating fibres connected to silicon photomultipliers (SiPMs), positioned at two locations upstream of the inflector. The IMBS measures the spatial distribution of the muons before injection, providing the valuable diagnostic information required for optimally directing the beam through the narrow inflector aperture. An additional IBMS detector with horizontal fibres only may be inserted downstream of the inflector to make a destructive measurement of the vertical beam profile \cite{IBMS}. The third of these systems are the `fibre harps', which were recovered from the E821 $g-2$ experiment and refurbished for use in E989. These are retractable `harps' of scintillating fibres, which can be inserted inside the vacuum chamber at approximate ring azimuthal angles of 180$\degree$ and 270$\degree$. Two detectors are positioned at each location, one with horizontally aligned fibres and another with vertically aligned fibres. While inserted, the fibre harps are used to make a destructive measurement of the spatial distribution of the beam, serving as a means of directly measuring effects such as the horizontal and vertical CBO during dedicated systematic runs. More information on the fibre harps may be found in \cite{TDR}. 
 
-% Representations of the E989 auxiliary detector systems, showing: (a) a schematic of the T0 counter, showing the scintillator (green) attached to PMTs on the left and right, which is mounted upstream of the inflector for the primary purpose of defining the initial time of the fill; (b) a computer model of one the IBMS detectors (IBMS1), showing the grid of scintillating fibres used to make a measurement of the spatial distribution of the beam upstream of the inflector; (c) a photograph of one of the four fibre harps, showing the scintillating fibres (horizontally aligned in this case) mounted on a retractable arm, which are used to make a destructive measurement of the spatial distribution of the beam inside the storage ring vacuum chamber. 
-
 \subsection{Calorimeters}\label{subsec:Calos}
 
 The primary means of positron detection at E989 are the twenty-four electromagnetic calorimeters which instrument the interior the ring, indicated by numbers 1 through 24 in Figure \ref{fig:RingSchematic}. The purpose of the calorimeters is to measure the energy, arrival time, and (to a lesser extent) the hit position of decay positrons.
@@ -301,25 +278,9 @@ The primary means of positron detection at E989 are the twenty-four electromagne
 
 Unlike the E821 calorimeters, which had a monolithic construction, the E989 calorimeters are composed of a segmented $9\text{-wide}\times6\text{-high}$ array of lead-fluoride ($\text{PbFl}_{2}$) crystals, a each with a volume of $25\times25\times140$ $\text{mm}^3$. Behind every crystal is a silicon photomultiplier (SiPM), which senses the Cherenkov light produced by relativistic charged particles passing through the crystal medium. The intensity of the light falling onto the SiPMs is proportional to the incident positron energy. Each crystal is isolated from its neighbours by a thin opaque and non-reflective wrapping, black Tedlar foil, which greatly limits the level of light transmitted between crystals: improving the spatial resolution of detected hits. The calorimeters are spaced evenly around the ring, each positioned immediately downstream of an extruded section of the vacuum chamber -- allowing decay positrons to travel with minimal energy loss before exiting the vacuum and being intercepted. Frontend electronics for each calorimeter are housed in a crate positioned away from the magnetic field region. A illustration of the calorimeters in position relative to the vacuum chamber is shown in Figure \ref{subfig:CaloModel}, and a photograph of the $\text{PbFl}_{2}$ crystals is shown in Figure \ref{subfig:CaloCrystals}. 
 
-% \begin{figure}[t!]
-% \centering{}\textit{Hamamatsu}
-% \includegraphics[trim={0 0 0 0},clip,width=.69\textwidth]{Images/Chapter3/CaloIllustration.pdf}
-% \caption{A rendering of three calorimeters in position during operation, with an incident decay positron indicated by a blue line; (b) a photograph of the $\text{PbFl}_{2}$ crystals and SiPMs during assembly. Image reproduced from \cite{CaloCommissioning}.}
-% \label{fig:CaloModel}
-% \end{figure}
-
-% \begin{figure}[t!]
-% \centering{}
-% \includegraphics[trim={0 1.2cm 0 0},clip,width=.69\textwidth]{Images/Chapter3/CaloCrystals.png}
-% \caption{A photograph of the $\text{PbFl}_{2}$ crystals and SiPMs during assembly. Image reproduced from \cite{CaloCommissioning}.}
-% \label{subfig:CaloCrystals}
-% \end{figure} 
-
 The calorimeter temporal resolution exceeds \SI{100}{\pico\second} for positrons with a kinetic energy greater than 100 MeV, as specified by the design requirements \cite{TDR}, aided by the short and fast signal produced by Cherenkov radiation. This requirement is motivated by the need to resolve pileup events, where two or more hits close in time and space are erroneously reconstructed as a single hit. Pileup, if unresolved, changes the number of positrons detected `above threshold' in the $\omega_{a}$ number oscillation. Pileup is more prominent early in the fill, causing an apparent time dependence in the phase of $\omega_{a}$. The requirements of the energy resolution of the calorimeters are less stringent, at better than 5\% at 2 GeV, since the $\omega_{a}$ measurement only uses the hit cluster energy as means of event selection rather than as a direct observable. 
 
 An additional requirement on the calorimeters is that variations in the energy response, or gain, must fall within 0.1\% per \SI{200}{\micro\second}. Much like pileup, changes in gain can bias $\omega_{a}$ between early and late times in the fill. To monitor this, a system of lasers periodically fire pulses of light into the crystals, allowing for `in-fill' gain variations to be corrected by directly comparing the detected energy to the energy deposited by the laser. The laser monitoring system may also be used to detect gain variations fill-by-fill, as well as to measure the SiPM time resolution by firing two pulses in quick succession. Detailed discussion on the calorimeters may be found in \cite{TDR} and \cite{Hempstead}.
-
-%{Additionally, the calorimeters must be able to distinguish two clusters of crystal hits at an efficiency of 100\% if those hits are more than \SI{5}{\nano\second} apart, and at an efficiency 66\% if they are less than  those hits separated by less \SI{5}{\nano\second} apart.}
 
 \subsection{The straw trackers}\label{subsec:Trackers}
 
@@ -358,26 +319,6 @@ Tracks as formed by first grouping straw hits into \SI{80}{\nano\second} windows
 In order to characterise positron parameters at the muon decay point, such as the decay angle, tracks are extrapolated backwards, through a region of varying magnetic field, using method developed by S. Charity \cite{Charity}. This method relies on a Runge-Kutta-Nyström algorithm \cite{Runge} to find the point of radial tangency, or the point where the radial component of momentum is zero, which is considered to be a reliable estimate of the decay point. The resolution of track extrapolated parameters is discussed, in the context of the muon EDM search, in Chapter \ref{chap:6} Section \ref{subsec:TrackResolution}.
 
 Finally, cuts are imposed on the parameters of tracks and extrapolated vertices in order to obtain a sample of what are referred to in this thesis as `quality tracks', or `quality vertices'. An example of a track-level quality requirement is that the track fit has a p-value of $>0.05$, and an example of a vertex-level quality requirement is that the positron does not scatter through a large volume of material before detection \cite{TrackQuality}.
-
-
-% \begin{figure}[t!]
-% \centering{}
-% \includegraphics[trim={0 0 0 0},clip,width=.69\textwidth]{Images/Chapter3/Tracker-InVac.png}
-% \caption{A photograph taken from the interior of the vacuum chamber, showing a tracker station from the perspective of the muon beam. Image courtesy of the E989 collaboration.}
-% \label{subfig:TrackerInVac}
-% \end{figure} 
-
-% To extrapolate tracks, a method 
-
-%  making use of the relationship between drift time and distance.  which adTime islands are further refined in `track candidates' by checking for significant gaps in time and space between straw hits. 
-
-% \myworries{I need some information on tracker performance and track extrapolation. Unfortunately information on the extrapolation resolution. Discuss how you get momentum from the curling of tracks through the magnetic field. What is the vertical angle resolution? Also, $25\degree$ (3 m) azimuthal acceptance.}
-
-
-
-% Performance? What's the resolution, when do they start taking data, maybe throw in a plot? What about acceptance. Not sure. 
-
-
 
 \section{Measurement periods}\label{sec:MeasPeriods}
 

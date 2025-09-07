@@ -18,16 +18,8 @@ The magnetic dipole moment, $\vec{\mu}$, of a subatomic particle with mass $m$, 
 \end{equation}
 %
 where $Q=\pm1$. $g$ is the $g$-factor: a dimensionless quantity which characterises the strength of the coupling between the magnetic moment and the spin. Classically, where the spin angular momentum may be compared to the total orbital angular momentum of a rotating distribution of charges, the $g$-factor would be equal to one \cite{Jackson}. For particles on the subatomic scale, however, it has been extensively proven that $g\neq1$. %By describing the behaviour of the magnetic moment in an external magnetic field, $\vec{B}$, in terms of the interaction Hamiltonian 
-%
-% \begin{equation} 
-%   \mathcal{H} = -\vec{\mu}\cdot\vec{B}, 
-%   \label{eqn:TotalHamiltonian1}
-% \end{equation}
-% %
-% which is may be understood as the potential energy of the system, allowed  experimentalists were able to deduce through hyperfine
+
 The origin of this deviation arises in part from relativistic effects, which may be reconciled with quantum mechanics via the Dirac equation: giving the prediction that $g=2$ for spin 1/2 particles (fermions). While this prediction holds at leading order, the interaction between the fermion and an external magnetic field includes contributions to the $g$-factor from higher order virtual particle loop diagrams at the fermion-photon vertex, known as radiative corrections, so that $g\neq2$. In the case of the electron and the muon, $g$ is slightly greater than 2. This deviation is the anomalous magnetic moment, $a$, which is defined as 
-%
- % relativistic quantum field theories such as QED and the SM require the inclusion of the effects from higher order processes, commonly known as radiative corrections. 
 %
 \begin{equation}
   a = \frac{g-2}{2},
@@ -112,10 +104,9 @@ where $c$ is the speed of light in a vacuum. $\eta$ is a dimensionless quantity,
 where $d$ assumes the convention
 %
 \begin{equation} 
-  \vec{d} = d\cdot\hat{s}. %= d\cdot\frac{\hbar}{2} %\frac{\vec{s}}{|\vec{s}|}.
+  \vec{d} = d\cdot\hat{s}.
   \label{eqn:scalarEDM}
 \end{equation}
-%dsvds 
 
 Unlike its magnetic counterpart, the EDM of the muon and other subatomic particles breaks the symmetries parity, $P$, where $(t,x)\rightarrow(t,-x)$, and time reversal, $T$, where $(t,x)\rightarrow(-t,x)$. This $P$ and $T$ symmetry breaking arises from the differing properties of axial vectors and polar vectors under $P$ and $T$ transformations \cite{LeptonDipoleMoments}. Axial vectors, which describe a rotation about an axis, are even under $P$ (they do not change sign) and polar vectors are odd. Magnetic field vectors, $\vec{B}$, are axial and electric field vectors, $\vec{E}$, are polar. Spin is an axial vector, making the dipole moments $\vec{\mu}$ and $\vec{d}$ axial vectors by Equations \ref{eqn:MDM} and \ref{eqn:EDM}. The third symmetry is charge conjugation, $C$, where $q\rightarrow-q$, under which all quantities mentioned here are odd. The combined symmetry $CPT$ is expected to hold, so it follows that if $\vec{B}$ is even under $P$ then it must be odd under $T$. The same logic applies for $\vec{E}$ and $\vec{s}$. The various transformation properties of $\vec{E}$, $\vec{B}$, $\vec{\mu}$, and $\vec{d}$, are given in Table \ref{tbl:CPT}. 
 
@@ -165,9 +156,6 @@ Electron & $1.1\times10^{-29}$ (90\% C.L.) & $\mathcal{O}(10^{-38})$ & \cite{Imp
 \label{tbl:ParticleEDMs}
 \end{table}
 
-
-% \myworries{Mention Purcell and Ramsey \cite{PurcellAndRamsey}.} If a non-zero muon EDM is discovered at Fermilab it would provide the first evidence of $CP$ violation in the lepton sector. Additional sources of $CP$ violation in the SM, such as that arising from a non-zero muon EDM, are highly sought after since levels of proven $CP$ violation in the SM, arising from the hadron sector\footnote{\myworries{$K^{0}\rightarrow\pi^{+}\pi^{-}$ and B-mesons. This is an area where I really do not know what I'm talking about but it should really be discussed. In any case it's likely to come up in a viva. Need some references.}}, are insufficient to account for the matter-antimatter asymmetry of the universe.
-
 The SM prediction for the magnitude of the muon EDM in Table \ref{tbl:ParticleEDMs} is estimated based on the electron EDM upper limit, under the assumption of minimal flavour violation (MFV) \cite{MFV} which requires that EDMs scale linearly with mass across generations of leptons, as follows
 %
 \begin{equation}
@@ -177,13 +165,7 @@ The SM prediction for the magnitude of the muon EDM in Table \ref{tbl:ParticleED
 %
 If this assumption holds, then the muon EDM is inaccessible by current experiments, and will remain so for the foreseeable future. However, MFV scaling is called into question by the observation of flavour anomalies in $B$-decays, such as the recent result from the LHCb experiment \cite{LHCb2021}, lending support to SM extensions which could allow for a muon EDM within reach of E989. Further discussion on this topic is given in the following section. 
 
-% The current upper limit on the muon EDM was set by the BNL Muon $g-2$ experiment, at $|d_{\mu}|<1.8\times10^{-19}$ $e\cdot$cm \cite{BNLEDM}. The Fermilab Muon $g-2$ experiment, with a substantially reduced statistical uncertainty and various improvements to experimental hardware, aims to improve upon this limit by at least an order of magnitude\footnote{\myworries{This estimate seems to vary depending on who you ask. We must have a proper idea of what we can do with our projected stats.}}. 
-
-% \clearpage
-
 \section{New physics}\label{sec:NewPhysics}
-
-% There are numerous `new physics' extensions to the SM which could account for discrepancy $\Delta a_{\mu}$, or allow for a large muon EDM, or both, in some scenarios. This section will provide a brief overview of this topic.
 
 The discovery of a large muon EDM would signal a significant departure from the SM. In particular, it would necessitate a BSM model involving a new complex parameter with a large CP violating phase, far in excess of that allowed within the SM. It would also indicate a breakdown of the linear mass scaling of EDMs between lepton generations, making it incompatible with the assumption of MFV. 
 
@@ -201,162 +183,3 @@ A well-known example of a model which can both provide chiral enhancement and ac
 A concrete alternative to the MSSM are models which introduce heavy scalar leptoquarks (LQ): BSM bosons which couple simultaneously to SM leptons and quarks, carrying both lepton and baryon number. Scalar LQ models are minimally single particle extensions to the SM, and can resolve $\Delta a_{\mu}$ via virtual loop interactions at the muon-photon vertex with a chiral enhancement factor of $m_{t}/m_{\mu}$, where $m_{t}$ is the top quark mass \cite{NewPhysicsExplanations2021}. While many LQ models have been excluded, they remain well-motivated by both $\Delta a_{\mu}$ and the aforementioned flavour anomalies which also call MFV into question.
 
 All considered, the muon EDM search at Fermilab is well motivated by the current landscape of new physics models, some of which allow for measurable values of $d_{\mu}$ while simultaneously accommodating the discrepancy $\Delta a_{\mu}$. The discussion presented here is far from exhaustive, and further reading on this topic may be found in \cite{CombinedExplantionsForaMuAndEDM2018}, \cite{CombinedExplantionsForaMuAndEDM2020}, and \cite{NewPhysicsExplanations2021}.
-
-
-% Additional models which involve chiral enhancement 
-
-% Searches at the LHC, such as at the CMS experiment \cite{CMS_2018}, indicate LQ masses in excess of 1 TeV. 
-
-
-
-% LQ searches at the LHC place constraints from B decays. Many LQ models have been excluded, only S1 and R2 models are OK. Fine tuning means that only ones just above the. 
-
-
-
-% with a chiral enhancement factor of $m_{t}/m_{\mu}$, 
-% complex Wilson coefficient of the effective Hamiltonian relates to former and the imaginary part to the latter.
-
-
-%The discrepancy $\Delta a_{\mu}$ may be interpreted as an indirect indication of new physics, meaning new physics can only be discovered by the construction of a model which both resolves the discrepancy and produces predictions that may be verified in other experiments. In contrast, 
-
-% sectors, since the electron Such extensions are well motivated however, and can predict elementary particle EDMs with far exceed those predicted in the SM. A concrete example of such a model is 
-
-
-%  which is far beyond that expected 
-
-
-% New physics models which resolve $\Delta a_{\mu}$  
-
-% For models involving radiative fermion mass generation, where fermion masses are radiatively induced from loops involving new physics, C is $\mathcal{O}({1})$ \cite{TheMuonAnomalyAndNewPhysics}. 
-
-% As introduced in the previous section, the factor $C=\delta m_{\mu} / m_{\mu}$ in Equation \ref{eqn:NewPhysicsScale}, which defines the mass-energy scale of new physics contributions to $a_{\mu}$, is highly model dependent. In the case of models involving an expansion of the local $SU(3)\times SU(2) \times U(1)$ symmetry of SM to a larger gauge group, with the inclusion of additional gauge bosons $Z^{\prime}$ and $W^{\prime}$ which could , $C$ is found to be $\mathcal{O}(\alpha/4\pi)$ ($\alpha$ being the fine-structure constant). In this case, the scale of new physics would be very low -- on the order of the $Z$-boson mass -- which is difficult to reconcile with the lack of evidence for such physics from collider experiments. The same is true for models which invoke extra dimensions \cite{TheMuonAnomalyAndNewPhysics} \cite{StockingerChapter}.
-
-% That said, light new physics may still resolve $\Delta a_{\mu}$, provided that the coupling is small enough that new physics remains hidden from experimental observation. One popular of class of models of this type are those which involve the addition of a hidden $U(1)$ symmetry to the SM, with a corresponding gauge boson called the dark photon. The dark photon can interact with the muon via kinetic mixing with the SM photon, with the dominant contribution to $\Delta a_{\mu}$ being proportional to the kinetic mixing parameter $\epsilon$. However, the current measured value of $a_{e}$ \cite{ElectronAnomalyMeasurement} constrains the dark photon mass to a range of 20-500 MeV, which is then excluded by various dark photon search experiments \myworries{Give one example}. That said, extensions to dark photon models which involve additional kinetic mixing with the $Z$-boson, so-called `dark Z' models, may still be viable for masses below 1 GeV, although they remain tightly constrained \cite[and references therein]{NewPhysicsExplanations2021}.
-
-% Alternatively, new physics solutions for $\Delta a_{\mu}$ may be realised at higher mass scales, which requires a mechanism to enhance $C$. This is typically related to the muon chirality flip in the $g-2$ interaction\footnote{In quantum field theory, the operator corresponding to $a_{\mu}$ connects left- and right-handed muons.}, which may be provided by a new heavy particle. This so-called chiral enhancement is a feature of various BSM models. For example, those involving the introduction of supersymmetric (SUSY) particles, so-called superpartners of SM particles, with their spin differing from their SM counterparts by $1/2$, so that SM fermions have a bosonic superpartner and vice versa. These superpartners could participate in the virtual loop interactions at the muon-photon vertex and modify $a_{\mu}$. In the minimally supersymmetric SM (MSSM), chiral enhancement is provided by the parameter $\tan\beta$, which is the ratio of vacuum expectation values of the two Higgs fields in the model. MSSM parameter space capable of resolving $\Delta a_{\mu}$ has been severely constrained by the persistent lack of evidence from the LHC and dark matter searches, with scenarios involving smuons and heavy charginos requiring unfavourably large values of $\tan\beta$. One scenario which could accommodate the discrepancy involves a Bino-like\footnote{The $B$-boson superpartner.} lightest supersymmetric particle (LSP) and slepton loop contribution, allowing for a wide range of mass scales and $\tan \beta$ values 
-
-% \cite{NewPhysicsExplanations2021}. 
-
-% Minimal leptoquark models involve the addition of one new particle to the SM. 
-
-
-
-% Regarding the muon EDM, a model which invokes chiral enhancement is highly relevant to the EDM. 
-
-% $a_{\mu}$ is related to $d_{\mu}$ because the real part of complex Wilson coefficient of the effective Hamiltonian relates to former and the imaginary part to the latter. In BSM scenarios which invoke chiral enhancement of $C$, the phase of imaginary part may be unconstrained, meaning that the $d_{\mu}$ may be very large. Models which allow for a large EDM must also involve scaling which does 
-
-% A key feature of both of these extensions is a scaling with lepton generation rather than lepton mass. This is particularly relevant, since searches for a muon EDM provide a unique opportunity to search for EDMs in a second generation particle 
-
-
-
-% In general, a model which 
-
-% \myworries{2HDM relates to the higgs.}. Leptoquark models 
-
-% %two-Higgs-doublet models (2HDM), and leptoquark (LQ) models, which will be discussed in turn. SUSY particles are the 
-
-
-% The scale of new physics, defined by Equation \ref{eqn:NewPhysicsScale}, may be enhanced or suppressed by an additional factor $C$, which is highly dependant on the details of the new physics model in question. 
-
-
-
-% This section will provide a brief overview of this topic.% drawing from discussion given in , \cite{TheMuonAnomalyAndNewPhysics}, , and ... %Many of these models have already been tightly constrained the by measurements of $a_{\mu}$ and $d_{\mu}$ already undertaken, and 
-
-
-
-% Another class of BSM models are those which involve the introduction of supersymmetric (SUSY) particles,  These SUSY particles are the so-called superpartners of SM particles, with their spin differing from their SM counterparts by $1/2$, so that SM fermions have a bosonic superpartner and vice versa. SUSY models are appealing because they can enhance $C$ by a factor of $\tan\beta$ (often referred to as chiral enhancement), which is the ratio of vacuum expectation values of the two Higgs fields. The dominant SUSY contributions to $a_{\mu}$ typically involve loop corrections from sleptons, neutralinos, and charginos. However, the  
-
-% As mentioned above, it is difficult to account for light new physics contributions to $a_{\mu}$ without some enhancement of $C$, as by $\tan\beta$ in SUSY, but 
-% Models which involve the enhancement of the parameter $C$ may also allow for a large muon EDM. In general, if the resolution to $\Delta a_{\mu}$ involves chiral enhancement, then it 
-
-% The Wilson coefficient is a complex parameter in the effective Hamiltonian. The real part relates to $a_{\mu}$ and the imaginary part to $d_{\mu}$.
-
-
-
-
-% is also relevant to the muon EDM. In general, any model which resolves $\Delta a_{\mu}$ by the introduction of TeV scale particles, and thereby requiring chiral enhancement, involves the introduction of a complex Wilson coefficient with an unconstrained phase. This means that a muon EDM could be large. 
-
-% $a_{\mu}$ is related to $d_{\mu}$ in that 
-
-% also provides chiral enhancement automatically provides a Wilson coefficeint with an a priori free phase. ... 
-
-% Indeed a situation involving flavour violating chiral enhancement whereby $\Delta a_{\mu}>0$ and $\Delta a_{e} << 0$ allows for an scenario whereby $d_{\mu}$ is unconstrained \cite{CombinedExplantionsForaMuAndEDM2020}. A model involving leptoquarks could account for both $\Delta a_{\mu}$ and result in a large $d_{\mu}$. 
-
-% EDM would indicate a breakdown of the SM because of CPT violation. The Cabibbo–Kobayashi–Maskawa matrix is the only part of the SM which allow
-
-% If the CP violating phase in the Wilson coefficient is siza
-
-
-% The requirement for a negative $\Delta a_{e}$ is 
-
-
-%  One scenario which can account for both is leptoquarks. 
-% \cite{CombinedExplantionsForaMuAndEDM}
-
-% % For example, the B anomalies motivate the introduction of leptoquarks, which can account not only for them, but at the same time for the AMM of the muon [44] via a mt/mμ enhanced effect [45, 46] whose phase is completely unconstrained.
-
-
-% %However, this scenario involves the production of a gravitino from the slepton decay. 
-
-
-% Two Higgs doublet. 
-
-% Further scenarios involve the introduction of new light particles, such as dark photons, leptoquarks, . 
-
-
-%  The SUSY contribution to $a_{\mu}$ is given by 
-% %
-% \begin{equation}
-%   a_{\mu}^{\text{SUSY}}\approx\pm13\times10^{-10}\cdot \tan\beta \cdot \left[\frac{100\text{ GeV}}{M_{\text{SUSY}}}\right]^{2}.
-% \end{equation}
-%
-% While the lack of evidence for SUSY particles at the LHC severely constraint SUSY MSSM parameter space, MSSM scenarios with heavy charginos and smuons are disfavored and can only explain ∆aμ if tan β >> 40 and/or μ >> 4 TeV. A Bino-like LSP is a promising candidate, with several viable areas of parameter space available that allow for Wino masses within LHC limits and ranging values of tanβ. Scenarios involving Wino- or Higgsino-like LSP can also accommodate ∆aμ, with the Wino-like scenario leading to the largest possible MSSM contribution to ∆aμ. Both these scenarios, however, require additional non-MSSM dark matter components (e.g., gravitinos). In other scenarios where both charginos are assumed to be lighter the sleptons are also limited by dark matter searches and LHC data. 
-
-% smuon-neutralino and sneutrino-chargino loops...
-
-% Above the 
-
-% Flavour violation?
-
-% Harbinger for new physics
-
-% \cite{TheMuonAnomalyAndNewPhysics}
-
-% \cite{NewPhysicsExplanations2021}
-
-
-
-% Last one isn't correct. It's a book chapter.
-
-% Additional gauge bosons are 
-
-
-% \itemize
-%   \item SUSY
-%   \item Dark photons
-%   \item Leptoquarks
-
-
-% As described by Equation \ref{eqn:NewPhysicsScale}, the scale BSM contributions to $a_{\mu}$ is suppressed by $1/M^{2}$, where $M$ refers to the mass scale new physics. Typically, this mass scale is $\lesssim1$ TeV. 
-
-% SUSY. 
-
-% Typically, models which purport to resolve $\Delta a_{\mu}$ require the introduction of a new massive particle interacting at the muon-photon vertex. 
-
-% Models which involve introduction of supersymmetric particles at the muon-photon vertex. 
-
-% SUSY requires large tan beta. 
-
-
-% both simultaneously. simultaneously allow for 
-% The discrepancy, $\Delta a_{\mu}$, 
-
-% There are wide array of extensions to the SM which purport to account for the observed discrepancy in $a_{\mu}$, , or allow for a large muon EDM, or fulfil both simultaneously. 
-
-% Typically, SM extensions that explain $\Delta a_{\mu}$ 
-
-% Flavour violation.
-
-
-% \myworries{See reference \cite{TheMuonAnomalyAndNewPhysics}. }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

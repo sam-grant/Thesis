@@ -12,9 +12,9 @@ In this thesis, a blinded search for *d<sub>μ</sub>* in E989 Run-1 is presented
 
 ## Key contributions
 
-- **Novel radial magnetic field measurement technique** achieving ≤1 ppm precision
-- **Comprehensive Monte Carlo simulation** for systematic uncertainty characterisation
-- **Blinded muon EDM search** using straw tracker detectors in E989 Run-1
+- **Novel radial magnetic field measurement technique** achieving ≤1 ppm precision;
+- **Comprehensive Monte Carlo simulation** for systematic uncertainty characterisation;
+- **Blinded muon EDM search** using straw tracker detectors in E989 Run-1.
 
 ## Compilation 
 
@@ -30,6 +30,6 @@ latexmk -pdf SamuelGrantThesis.tex
 
 ---
 
-*This thesis represents original research conducted as a collaborator on the Fermilab Muon g-2 experiment.*
+*The accepted manuscript is also available here: https://discovery.ucl.ac.uk/id/eprint/10161589/*.
 
-*The original thesis may also be found here: https://discovery.ucl.ac.uk/id/eprint/10161589/*
+*This thesis represents original research conducted as a collaborator on, and with the support of, the Fermilab Muon g-2 experiment.*
